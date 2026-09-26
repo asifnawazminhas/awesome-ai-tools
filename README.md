@@ -109,3 +109,7 @@ The README intentionally does not duplicate the full release history.
 MIT License.
 
 Copyright © 2026 Asif Nawaz Minhas.
+
+## Current UI note
+
+Card action buttons use a consistent fixed height. Tool cards with GitHub links now align with cards that only have Details and Website actions.

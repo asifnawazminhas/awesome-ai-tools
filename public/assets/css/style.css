@@ -177,3 +177,45 @@ a{color:inherit}button,input{font:inherit}.wrap{width:min(1480px,calc(100% - 48p
     font-size:11px;
   }
 }
+
+
+/* v11.3 consistent card action buttons */
+.card-bottom{
+  display:flex !important;
+  align-items:stretch;
+  gap:7px;
+}
+.card-bottom a,
+.card-bottom button{
+  min-height:34px;
+  height:34px;
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap !important;
+  line-height:1 !important;
+  padding:0 10px !important;
+  box-sizing:border-box;
+}
+.card-bottom .details-btn{
+  flex:0 0 62px;
+}
+.card-bottom .card-link{
+  flex:1 1 auto;
+  min-width:0;
+}
+.card-bottom .github-link{
+  flex:0 0 70px;
+}
+@media(max-width:700px){
+  .card-bottom{
+    display:grid !important;
+    grid-template-columns:1fr;
+  }
+  .card-bottom .details-btn,
+  .card-bottom .card-link,
+  .card-bottom .github-link{
+    width:100%;
+    flex:none;
+  }
+}
