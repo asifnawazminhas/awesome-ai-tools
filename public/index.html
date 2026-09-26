@@ -31,6 +31,7 @@
       <span class="brand-copy"><strong>AI Tools</strong><small>asifnawazminhas.com</small></span>
     </a>
     <nav class="nav-links" aria-label="Primary navigation"><a href="/">Home</a><a href="#tools">All Tools</a><a href="#categoryNav">Categories</a><a href="/security-ai/">Security AI</a><a href="#featured">Featured</a><a href="#recent">Recently Added</a><a href="https://github.com/asifnawazminhas/awesome-ai-tools/issues/new?title=Submit%20a%20Tool%3A%20&labels=tool-submission" target="_blank" rel="noopener noreferrer">Submit a Tool</a><a href="/about/">About</a></nav>
+    <button id="shareSite" class="header-share" type="button" aria-label="Share Awesome AI Tools">Share</button>
     <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">◐</button>
   </div>
 </header>
@@ -69,14 +70,14 @@ Build
         <div class="section-head compact"><div><div class="eyebrow">Featured</div><h2>Featured AI tools</h2></div><button id="viewFeatured" class="text-button" type="button">View all</button></div>
         <div id="featuredStrip" class="spotlight-strip"></div>
       </section>
-      <section class="spotlight-panel">
+      <section class="spotlight-panel" id="recent">
         <div class="section-head compact"><div><div class="eyebrow">Recently added</div><h2>New additions</h2></div><button id="viewRecent" class="text-button" type="button">View all</button></div>
         <div id="recentStrip" class="spotlight-strip"></div>
       </section>
     </div>
   </div>
 </section>
-<section class="spotlight popular-section"><div class="wrap"><section class="spotlight-panel"><div class="section-head compact"><div><div class="eyebrow">Popular</div><h2>Most opened tools</h2></div></div><div id="popularStrip" class="spotlight-strip"></div></section></div></section><section id="tools" class="directory">
+<section class="spotlight popular-section" id="popular"><div class="wrap"><section class="spotlight-panel"><div class="section-head compact"><div><div class="eyebrow">Popular</div><h2>Most opened tools</h2></div></div><div id="popularStrip" class="spotlight-strip"></div></section></div></section><section id="tools" class="directory">
   <div class="wrap">
     <div class="search-row">
       <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search AI tools"><kbd>/</kbd><button id="clearSearch" class="clear-search" type="button" aria-label="Clear search">×</button></div>
@@ -150,6 +151,11 @@ window.AWESOME_AI_ANALYTICS={enabled:false,endpoint:""};
 </script>
 <script src="/assets/js/analytics.js" defer></script>
 <script src="/assets/js/app.js"></script>
-<button id="pageScrollToggle" class="page-scroll-toggle" type="button" aria-label="Scroll to bottom" title="Scroll to bottom"><span aria-hidden="true">↓</span></button>
+
+<div class="page-scroll-controls" aria-label="Page scroll controls">
+  <button id="scrollTopBtn" class="page-scroll-btn" type="button" aria-label="Scroll to top" title="Scroll to top">↑</button>
+  <button id="scrollBottomBtn" class="page-scroll-btn" type="button" aria-label="Scroll to bottom" title="Scroll to bottom">↓</button>
+</div>
+
 </body>
 </html>

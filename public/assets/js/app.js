@@ -29,9 +29,12 @@ const savedTheme=localStorage.getItem('theme');if(savedTheme)document.documentEl
 Promise.all([fetch('/data/tools.json').then(r=>r.json()),fetch('/data/categories.json').then(r=>r.json())]).then(([td,cd])=>{tools=td;categoryMeta=cd;categories=['All',...Object.keys(categoryMeta)];heroCounts.textContent=`${tools.length} tools · ${Object.keys(categoryMeta).length} categories`;renderSpotlights();renderFilters();renderSections();updateCompare();const p=new URLSearchParams(location.search);if(p.get('tool')&&tools.some(t=>t.name===p.get('tool')))openModal(p.get('tool'))}).catch(()=>{emptyState.hidden=false;emptyState.textContent='Unable to load the tool directory.'});
 
 
-// v12 site sharing and smart page scroll
+
+
+// v12.1 share + explicit page scroll controls
 const shareSite=document.getElementById('shareSite');
-const pageScrollToggle=document.getElementById('pageScrollToggle');
+const scrollTopBtn=document.getElementById('scrollTopBtn');
+const scrollBottomBtn=document.getElementById('scrollBottomBtn');
 
 async function shareSiteAction(){
   const shareData={
@@ -52,23 +55,33 @@ async function shareSiteAction(){
 }
 if(shareSite) shareSite.addEventListener('click',shareSiteAction);
 
-function updatePageScrollToggle(){
-  if(!pageScrollToggle) return;
+function scrollPageTop(){
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function scrollPageBottom(){
+  const bottom=Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight
+  );
+  window.scrollTo({top:bottom,behavior:'smooth'});
+}
+if(scrollTopBtn) scrollTopBtn.addEventListener('click',scrollPageTop);
+if(scrollBottomBtn) scrollBottomBtn.addEventListener('click',scrollPageBottom);
+
+function updateScrollControls(){
   const maxScroll=Math.max(document.documentElement.scrollHeight-window.innerHeight,0);
-  const progress=maxScroll ? window.scrollY/maxScroll : 0;
-  const goTop=progress>0.45;
-  pageScrollToggle.querySelector('span').textContent=goTop?'↑':'↓';
-  pageScrollToggle.setAttribute('aria-label',goTop?'Scroll to top':'Scroll to bottom');
-  pageScrollToggle.setAttribute('title',goTop?'Scroll to top':'Scroll to bottom');
-  pageScrollToggle.classList.toggle('to-top',goTop);
-  pageScrollToggle.hidden=maxScroll<220;
+  if(scrollTopBtn){
+    scrollTopBtn.disabled=window.scrollY<40;
+    scrollTopBtn.classList.toggle('disabled',window.scrollY<40);
+  }
+  if(scrollBottomBtn){
+    const atBottom=maxScroll-window.scrollY<40;
+    scrollBottomBtn.disabled=atBottom;
+    scrollBottomBtn.classList.toggle('disabled',atBottom);
+  }
 }
-if(pageScrollToggle){
-  pageScrollToggle.addEventListener('click',()=>{
-    const goTop=pageScrollToggle.classList.contains('to-top');
-    window.scrollTo({top:goTop?0:document.documentElement.scrollHeight,behavior:'smooth'});
-  });
-  window.addEventListener('scroll',updatePageScrollToggle,{passive:true});
-  window.addEventListener('resize',updatePageScrollToggle);
-  updatePageScrollToggle();
-}
+window.addEventListener('scroll',updateScrollControls,{passive:true});
+window.addEventListener('resize',updateScrollControls);
+window.addEventListener('load',updateScrollControls);
+setTimeout(updateScrollControls,300);
+setTimeout(updateScrollControls,1200);

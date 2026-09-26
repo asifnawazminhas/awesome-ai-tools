@@ -405,7 +405,9 @@ a{color:inherit}button,input{font:inherit}.wrap{width:min(1480px,calc(100% - 48p
 }
 
 
-/* v12 brand mark + share + scroll polish */
+
+
+/* v12.1 logo + share + scroll controls */
 .brand-mark-logo{
   width:40px !important;
   height:40px !important;
@@ -416,11 +418,7 @@ a{color:inherit}button,input{font:inherit}.wrap{width:min(1480px,calc(100% - 48p
   border:0 !important;
   box-shadow:0 8px 24px rgba(109,92,246,.18);
 }
-.brand-mark-logo img{
-  width:100%;
-  height:100%;
-  display:block;
-}
+.brand-mark-logo img{width:100%;height:100%;display:block}
 .header-share{
   min-height:34px;
   padding:0 12px;
@@ -431,51 +429,53 @@ a{color:inherit}button,input{font:inherit}.wrap{width:min(1480px,calc(100% - 48p
   font-size:11px;
   font-weight:800;
   cursor:pointer;
-  transition:transform .15s ease,border-color .15s ease,background .15s ease;
 }
 .header-share:hover{
-  transform:translateY(-1px);
   background:rgba(99,102,241,.10);
   border-color:rgba(124,128,255,.32);
 }
-.page-scroll-toggle{
+.page-scroll-controls{
   position:fixed;
-  right:22px;
-  bottom:22px;
-  z-index:90;
-  width:44px;
-  height:44px;
-  display:grid;
-  place-items:center;
-  border-radius:14px;
+  right:20px;
+  bottom:20px;
+  z-index:95;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.page-scroll-btn{
+  width:42px;
+  height:42px;
+  border-radius:12px;
   border:1px solid rgba(129,140,248,.28);
-  background:rgba(8,17,31,.82);
+  background:rgba(8,17,31,.88);
   color:#fff;
-  box-shadow:0 12px 34px rgba(0,0,0,.28);
+  font-size:18px;
+  line-height:1;
+  box-shadow:0 12px 30px rgba(0,0,0,.26);
   backdrop-filter:blur(10px);
   cursor:pointer;
-  opacity:.72;
-  transition:opacity .15s ease,transform .15s ease,background .15s ease,border-color .15s ease;
+  transition:transform .15s ease,opacity .15s ease,background .15s ease,border-color .15s ease;
 }
-.page-scroll-toggle:hover{
-  opacity:1;
-  transform:translateY(-2px);
-  background:linear-gradient(135deg,rgba(103,92,246,.92),rgba(139,92,246,.92));
+.page-scroll-btn:hover:not(:disabled){
+  transform:translateY(-1px);
+  background:linear-gradient(135deg,#675cf6,#8b5cf6);
   border-color:transparent;
 }
-.page-scroll-toggle span{
-  font-size:20px;
-  line-height:1;
+.page-scroll-btn:disabled,
+.page-scroll-btn.disabled{
+  opacity:.3;
+  cursor:default;
+}
+#recent,
+#featured,
+#popular,
+#tools,
+#categoryNav{
+  scroll-margin-top:84px;
 }
 @media(max-width:760px){
-  .header-share{
-    display:none;
-  }
-  .page-scroll-toggle{
-    right:14px;
-    bottom:14px;
-    width:42px;
-    height:42px;
-    border-radius:13px;
-  }
+  .header-share{display:none}
+  .page-scroll-controls{right:12px;bottom:12px}
+  .page-scroll-btn{width:40px;height:40px}
 }
