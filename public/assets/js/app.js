@@ -16,7 +16,7 @@ function matches(t,q){if(activeCategory!=='All'&&t.category!==activeCategory)ret
 function sortItems(items){const m=sortSelect.value;return [...items].sort((a,b)=>m==='az'?a.name.localeCompare(b.name):m==='category'?a.category.localeCompare(b.category)||a.name.localeCompare(b.name):m==='recent'?b.added.localeCompare(a.added)||a.name.localeCompare(b.name):Number(b.featured)-Number(a.featured)||a.name.localeCompare(b.name))}
 function badges(t){let b=[];if(t.featured)b.push('<span class="status-badge featured">Featured</span>');if(t.openSource)b.push('<span class="status-badge">Open Source</span>');if(t.localModel)b.push('<span class="status-badge">Local AI</span>');if(t.apiAvailable)b.push('<span class="status-badge api">API</span>');if(t.status==='Experimental')b.push('<span class="status-badge status-experimental">Experimental</span>');return b.join('')}
 function card(t){const fav=favorites.has(t.name),cmp=compare.has(t.name);return `<article class="tool-card"><button class="tool-top card-open" data-open="${t.name}" type="button">${logoMarkup(t)}<h3>${t.name}</h3></button><p class="tool-desc">${t.desc}</p><div class="status-row">${badges(t)}</div><div class="platform-row">${t.platforms.map(p=>`<span class="platform-badge">${p}</span>`).join('')}</div><div class="card-spacer"></div><div class="card-bottom"><a class="details-btn" href="/tools/${slugify(t.name)}/">Details</a><a class="card-link" href="${t.website}" target="_blank" rel="noopener noreferrer" data-visit="${t.name}">Website ↗</a>${t.github?`<a class="github-link" href="${t.github}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>`:''}</div><div class="card-actions-row"><button class="quiet-action ${fav?'active':''}" data-favorite="${t.name}" aria-label="Favorite ${t.name}">☆</button><button class="quiet-action ${cmp?'active':''}" data-compare="${t.name}" aria-label="Compare ${t.name}">⇄</button><button class="quiet-action" data-share="${t.name}" aria-label="Share ${t.name}">↗</button></div></article>`}
-function renderSections(){const q=search.value.trim().toLowerCase(),visible=activeCategory==='All'?Object.keys(categoryMeta):[activeCategory];let total=0;sections.innerHTML=visible.map(cat=>{const items=sortItems(tools.filter(t=>t.category===cat&&matches(t,q)));if(!items.length)return'';total+=items.length;const [icon,desc]=categoryMeta[cat];return `<section class="tool-section"><div class="section-head"><div class="section-title"><span class="section-icon">${icon}</span><div><h2>${cat}</h2><p>${desc}</p></div></div><span class="section-count">${items.length} tools</span></div><div class="tool-grid">${items.map(card).join('')}</div></section>`}).join('');emptyState.hidden=total!==0;resultCount.textContent=`${total} tool${total===1?'':'s'}`;wire()}
+function renderSections(){const q=search.value.trim().toLowerCase(),visible=activeCategory==='All'?categories.filter(c=>c!=='All'):[activeCategory];let total=0;sections.innerHTML=visible.map(cat=>{const items=sortItems(tools.filter(t=>t.category===cat&&matches(t,q)));if(!items.length)return'';total+=items.length;const meta=categoryMeta[cat]||['◈','AI tools selected for security workflows.'];const [icon,desc]=meta;return `<section class="tool-section"><div class="section-head"><div class="section-title"><span class="section-icon">${icon}</span><div><h2>${cat}</h2><p>${desc}</p></div></div><span class="section-count">${items.length} tools</span></div><div class="tool-grid">${items.map(card).join('')}</div></section>`}).join('');emptyState.hidden=total!==0;resultCount.textContent=`${total} tool${total===1?'':'s'}`;wire()}
 function wire(){document.querySelectorAll('[data-favorite]').forEach(b=>b.addEventListener('click',()=>{favorites.has(b.dataset.favorite)?favorites.delete(b.dataset.favorite):favorites.add(b.dataset.favorite);saveFavorites();renderSections()}));document.querySelectorAll('[data-compare]').forEach(b=>b.addEventListener('click',()=>{compare.has(b.dataset.compare)?compare.delete(b.dataset.compare):compare.size<4&&compare.add(b.dataset.compare);updateCompare();renderSections()}));document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>openModal(b.dataset.open)));document.querySelectorAll('[data-share]').forEach(b=>b.addEventListener('click',()=>shareTool(b.dataset.share,b)));document.querySelectorAll('[data-visit]').forEach(a=>a.addEventListener('click',()=>recordClick(a.dataset.visit)))}
 function toolPermalink(name){
   const url=new URL('/',location.origin);
@@ -75,5 +75,78 @@ function openToolFromUrl(){
     document.body.classList.remove('modal-open');
   }
 }
-Promise.all([fetch('/data/tools.json',{cache:'no-store'}).then(r=>r.json()),fetch('/data/categories.json',{cache:'no-store'}).then(r=>r.json())]).then(([td,cd])=>{tools=td;categoryMeta=cd;categories=['All',...Object.keys(categoryMeta)];const nativeCount=tools.filter(t=>t.securityRelevance==='Security Native').length;heroCounts.textContent=`${tools.length} tools · ${nativeCount} security-native · ${Object.keys(categoryMeta).length} categories`;renderSpotlights();renderFilters();renderSections();updateCompare();openToolFromUrl()}).catch(()=>{emptyState.hidden=false;emptyState.textContent='Unable to load the tool directory.'});
+Promise.all([fetch('/data/tools.json',{cache:'no-store'}).then(r=>r.json()),fetch('/data/categories.json',{cache:'no-store'}).then(r=>r.json())]).then(([td,cd])=>{tools=td;categoryMeta=cd;const toolCategories=[...new Set(tools.map(t=>t.category))];categories=['All',...toolCategories];const nativeCount=tools.filter(t=>t.securityRelevance==='Security Native').length;heroCounts.textContent=`${tools.length} tools · ${nativeCount} security-native · ${toolCategories.length} categories`;renderSpotlights();renderFilters();renderSections();updateCompare();openToolFromUrl()}).catch(()=>{emptyState.hidden=false;emptyState.textContent='Unable to load the tool directory.'});
 window.addEventListener('popstate',()=>{if(tools.length)openToolFromUrl()});
+
+
+// v15.3 prominent homepage search
+const homeToolSearch=document.getElementById('homeToolSearch');
+const homeSearchClear=document.getElementById('homeSearchClear');
+const homeSearchStatus=document.getElementById('homeSearchStatus');
+const homeSearchResults=document.getElementById('homeSearchResults');
+
+function renderHomeSearch(){
+  if(!homeToolSearch||!homeSearchResults||!homeSearchStatus)return;
+  const q=homeToolSearch.value.trim().toLowerCase();
+  if(!q){
+    homeSearchResults.hidden=true;
+    homeSearchResults.innerHTML='';
+    homeSearchStatus.textContent=tools.length?`${tools.length} tools available`:'';
+    if(homeSearchClear)homeSearchClear.hidden=true;
+    return;
+  }
+
+  const results=tools.filter(t=>{
+    const hay=[
+      t.name,t.desc,t.category,t.type,t.securityRelevance,
+      ...(t.tags||[]),...(t.securityCapabilities||[])
+    ].join(' ').toLowerCase();
+    return hay.includes(q);
+  }).slice(0,8);
+
+  if(homeSearchClear)homeSearchClear.hidden=false;
+  homeSearchStatus.textContent=`${results.length}${results.length===8?'+' : ''} result${results.length===1?'':'s'}`;
+
+  if(!results.length){
+    homeSearchResults.hidden=false;
+    homeSearchResults.innerHTML='<div class="home-search-empty">No matching tools found.</div>';
+    return;
+  }
+
+  homeSearchResults.hidden=false;
+  homeSearchResults.innerHTML=results.map(t=>`
+    <button class="home-search-result" type="button" data-home-tool="${t.name}">
+      ${logoMarkup(t,'home-search-logo')}
+      <span><strong>${t.name}</strong><small>${t.securityRelevance||t.category}</small></span>
+      <em>Open</em>
+    </button>
+  `).join('');
+
+  homeSearchResults.querySelectorAll('[data-home-tool]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const name=btn.dataset.homeTool;
+      openModal(name);
+      homeSearchResults.hidden=true;
+    });
+  });
+}
+
+if(homeToolSearch){
+  homeToolSearch.addEventListener('input',renderHomeSearch);
+  homeToolSearch.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){
+      const first=homeSearchResults?.querySelector('[data-home-tool]');
+      if(first)first.click();
+    }
+    if(e.key==='Escape'){
+      homeToolSearch.value='';
+      renderHomeSearch();
+      homeToolSearch.blur();
+    }
+  });
+  if(homeSearchClear)homeSearchClear.addEventListener('click',()=>{
+    homeToolSearch.value='';
+    homeToolSearch.focus();
+    renderHomeSearch();
+  });
+}
