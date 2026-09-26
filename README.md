@@ -1,29 +1,35 @@
 # Awesome AI Tools
 
-Static, dependency-free website intended for a subdomain such as:
+A practical directory of AI assistants, coding tools, research tools, local LLMs, image generators and AI platforms.
 
-`ai.asifnawazminhas.com`
+## Cloudflare deployment
 
-## Files
+This repository is configured for Cloudflare Workers static assets.
 
-- `index.html` - main directory
-- `assets/css/style.css` - responsive dark/light design
-- `assets/js/app.js` - search, filters, theme toggle, random tool
-- `assets/img/favicon.svg` - favicon
-- `404.html` - basic not-found page
-- `robots.txt`
-- `sitemap.xml`
+Deploy command:
 
-## Deploy
+```bash
+npx wrangler deploy
+```
 
-Upload the contents of this folder to the web root of the subdomain.
+Cloudflare serves only the contents of `./public/`.
 
-If using GitHub Pages, Cloudflare Pages, Netlify, or another static host, no build command is required.
+## Repository structure
 
-## Custom domain
+```text
+awesome-ai-tools/
+├── LICENSE
+├── README.md
+├── wrangler.toml
+└── public/
+    ├── index.html
+    ├── 404.html
+    ├── robots.txt
+    ├── sitemap.xml
+    └── assets/
+        ├── css/
+        ├── js/
+        └── img/
+```
 
-Configure the DNS/hosting platform so the chosen subdomain points to the deployment.
-
-## Included highlight
-
-- Loes - Dutch AI assistant: https://loes.ai/
+Intended custom domain: `ai.asifnawazminhas.com`
