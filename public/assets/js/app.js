@@ -18,12 +18,62 @@ function badges(t){let b=[];if(t.featured)b.push('<span class="status-badge feat
 function card(t){const fav=favorites.has(t.name),cmp=compare.has(t.name);return `<article class="tool-card"><button class="tool-top card-open" data-open="${t.name}" type="button">${logoMarkup(t)}<h3>${t.name}</h3></button><p class="tool-desc">${t.desc}</p><div class="status-row">${badges(t)}</div><div class="platform-row">${t.platforms.map(p=>`<span class="platform-badge">${p}</span>`).join('')}</div><div class="card-spacer"></div><div class="card-bottom"><a class="details-btn" href="/tools/${slugify(t.name)}/">Details</a><a class="card-link" href="${t.website}" target="_blank" rel="noopener noreferrer" data-visit="${t.name}">Website ↗</a>${t.github?`<a class="github-link" href="${t.github}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>`:''}</div><div class="card-actions-row"><button class="quiet-action ${fav?'active':''}" data-favorite="${t.name}" aria-label="Favorite ${t.name}">☆</button><button class="quiet-action ${cmp?'active':''}" data-compare="${t.name}" aria-label="Compare ${t.name}">⇄</button><button class="quiet-action" data-share="${t.name}" aria-label="Share ${t.name}">↗</button></div></article>`}
 function renderSections(){const q=search.value.trim().toLowerCase(),visible=activeCategory==='All'?Object.keys(categoryMeta):[activeCategory];let total=0;sections.innerHTML=visible.map(cat=>{const items=sortItems(tools.filter(t=>t.category===cat&&matches(t,q)));if(!items.length)return'';total+=items.length;const [icon,desc]=categoryMeta[cat];return `<section class="tool-section"><div class="section-head"><div class="section-title"><span class="section-icon">${icon}</span><div><h2>${cat}</h2><p>${desc}</p></div></div><span class="section-count">${items.length} tools</span></div><div class="tool-grid">${items.map(card).join('')}</div></section>`}).join('');emptyState.hidden=total!==0;resultCount.textContent=`${total} tool${total===1?'':'s'}`;wire()}
 function wire(){document.querySelectorAll('[data-favorite]').forEach(b=>b.addEventListener('click',()=>{favorites.has(b.dataset.favorite)?favorites.delete(b.dataset.favorite):favorites.add(b.dataset.favorite);saveFavorites();renderSections()}));document.querySelectorAll('[data-compare]').forEach(b=>b.addEventListener('click',()=>{compare.has(b.dataset.compare)?compare.delete(b.dataset.compare):compare.size<4&&compare.add(b.dataset.compare);updateCompare();renderSections()}));document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>openModal(b.dataset.open)));document.querySelectorAll('[data-share]').forEach(b=>b.addEventListener('click',()=>shareTool(b.dataset.share,b)));document.querySelectorAll('[data-visit]').forEach(a=>a.addEventListener('click',()=>recordClick(a.dataset.visit)))}
-async function shareTool(name,b){const t=tools.find(x=>x.name===name),url=`${location.origin}/tools/${slugify(name)}/`;try{if(navigator.share)await navigator.share({title:t.name,text:t.desc,url});else{await navigator.clipboard.writeText(url);const old=b.textContent;b.textContent='✓';setTimeout(()=>b.textContent=old,1200)}}catch(e){}}
-function openModal(name){const t=tools.find(x=>x.name===name);if(!t)return;recordClick(name);history.replaceState(null,'',`?tool=${encodeURIComponent(name)}`);modalContent.innerHTML=`<div class="modal-hero">${logoMarkup(t,'tool-logo large')}<div><div class="eyebrow">${t.category}</div><h2 id="modalTitle">${t.name}</h2></div></div><p class="modal-desc">${t.desc}</p><div class="modal-grid"><div><span>Type</span><strong>${t.type}</strong></div><div><span>Pricing</span><strong>${t.pricing}</strong></div><div><span>Open source</span><strong>${t.openSource?'Yes':'No'}</strong></div><div><span>Local support</span><strong>${t.localModel?'Yes':'No'}</strong></div><div><span>API available</span><strong>${t.apiAvailable?'Yes':'No'}</strong></div><div><span>Platforms</span><strong>${t.platforms.join(', ')}</strong></div><div><span>Last verified</span><strong>${t.lastVerified}</strong></div></div><div class="modal-actions"><a class="secondary-action" href="/tools/${slugify(t.name)}/">Full details</a><button class="secondary-action" id="modalFav">${favorites.has(name)?'Remove favorite':'Add favorite'}</button><button class="secondary-action" id="modalShare">Share / Copy link</button><a class="card-link modal-open-link" href="${t.website}" target="_blank" rel="noopener noreferrer">Official website ↗</a>${t.github?`<a class="github-link modal-open-link" href="${t.github}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>`:''}</div>`;toolModal.hidden=false;document.body.classList.add('modal-open');$('#modalFav').addEventListener('click',()=>{favorites.has(name)?favorites.delete(name):favorites.add(name);saveFavorites();openModal(name);renderSections()});$('#modalShare').addEventListener('click',e=>shareTool(name,e.currentTarget))}
-function closeModal(){toolModal.hidden=true;document.body.classList.remove('modal-open');if(location.search.includes('tool='))history.replaceState(null,'',location.pathname+location.hash)}
+function toolPermalink(name){
+  const url=new URL('/',location.origin);
+  url.searchParams.set('tool',name);
+  return url.toString();
+}
+async function copyTextRobust(text){
+  if(navigator.clipboard && window.isSecureContext){
+    try{
+      await navigator.clipboard.writeText(text);
+      return true;
+    }catch(_){}
+  }
+  const ta=document.createElement('textarea');
+  ta.value=text;
+  ta.setAttribute('readonly','');
+  ta.style.position='fixed';
+  ta.style.left='-9999px';
+  ta.style.top='0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  ta.setSelectionRange(0,ta.value.length);
+  let ok=false;
+  try{ok=document.execCommand('copy');}catch(_){}
+  ta.remove();
+  return ok;
+}
+async function shareTool(name,b){
+  const t=tools.find(x=>x.name===name);
+  if(!t)return;
+  const url=toolPermalink(name);
+  const old=b.textContent;
+  const copied=await copyTextRobust(url);
+  if(copied){
+    b.textContent='Copied ✓';
+    setTimeout(()=>b.textContent=old,1400);
+    return;
+  }
+  window.prompt('Copy this tool link:',url);
+}
+function openModal(name){const t=tools.find(x=>x.name===name);if(!t)return;recordClick(name);try{history.replaceState({tool:name},'',toolPermalink(name))}catch(_){};modalContent.innerHTML=`<div class="modal-hero">${logoMarkup(t,'tool-logo large')}<div><div class="eyebrow">${t.category}</div><h2 id="modalTitle">${t.name}</h2></div></div><p class="modal-desc">${t.desc}</p><div class="modal-grid"><div><span>Type</span><strong>${t.type}</strong></div><div><span>Pricing</span><strong>${t.pricing}</strong></div><div><span>Open source</span><strong>${t.openSource?'Yes':'No'}</strong></div><div><span>Local support</span><strong>${t.localModel?'Yes':'No'}</strong></div><div><span>API available</span><strong>${t.apiAvailable?'Yes':'No'}</strong></div><div><span>Platforms</span><strong>${t.platforms.join(', ')}</strong></div><div><span>Last verified</span><strong>${t.lastVerified}</strong></div></div><div class="modal-actions"><a class="secondary-action" href="/tools/${slugify(t.name)}/">Full details</a><button class="secondary-action" id="modalFav">${favorites.has(name)?'Remove favorite':'Add favorite'}</button><button class="secondary-action" id="modalShare">Share / Copy link</button><a class="card-link modal-open-link" href="${t.website}" target="_blank" rel="noopener noreferrer">Official website ↗</a>${t.github?`<a class="github-link modal-open-link" href="${t.github}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>`:''}</div>`;toolModal.hidden=false;document.body.classList.add('modal-open');$('#modalFav').addEventListener('click',()=>{favorites.has(name)?favorites.delete(name):favorites.add(name);saveFavorites();openModal(name);renderSections()});$('#modalShare').addEventListener('click',e=>shareTool(name,e.currentTarget))}
+function closeModal(){toolModal.hidden=true;document.body.classList.remove('modal-open');if(location.search.includes('tool=')){try{history.replaceState(null,'',location.origin+location.pathname+location.hash)}catch(_){}}}
 function updateCompare(){compareCount.textContent=compare.size;comparePanel.hidden=compare.size<2;if(compare.size<2){compareTable.innerHTML='';return}const s=[...compare].map(n=>tools.find(t=>t.name===n));compareTable.innerHTML=`<table class="compare-table"><thead><tr><th>Attribute</th>${s.map(t=>`<th>${t.name}</th>`).join('')}</tr></thead><tbody><tr><td>Category</td>${s.map(t=>`<td>${t.category}</td>`).join('')}</tr><tr><td>Pricing</td>${s.map(t=>`<td>${t.pricing}</td>`).join('')}</tr><tr><td>Open source</td>${s.map(t=>`<td>${t.openSource?'Yes':'No'}</td>`).join('')}</tr><tr><td>Local</td>${s.map(t=>`<td>${t.localModel?'Yes':'No'}</td>`).join('')}</tr><tr><td>API</td>${s.map(t=>`<td>${t.apiAvailable?'Yes':'No'}</td>`).join('')}</tr></tbody></table>`}
 function resetAll(){activeCategory='All';activeMeta='All';activeSecurity='All';favoritesMode=false;search.value='';sortSelect.value='featured';renderFilters();renderSections()}
 modalClose.addEventListener('click',closeModal);toolModal.addEventListener('click',e=>e.target===toolModal&&closeModal());document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();search.focus()}});
 favoritesOnly.addEventListener('click',()=>{favoritesMode=!favoritesMode;renderFilters();renderSections()});compareToggle.addEventListener('click',()=>compare.size>=2&&comparePanel.scrollIntoView({behavior:'smooth'}));clearCompare.addEventListener('click',()=>{compare.clear();updateCompare();renderSections()});search.addEventListener('input',renderSections);clearSearch.addEventListener('click',()=>{search.value='';search.focus();renderSections()});resetFilters.addEventListener('click',resetAll);emptyReset.addEventListener('click',resetAll);sortSelect.addEventListener('change',renderSections);randomTool.addEventListener('click',()=>{const p=tools.filter(t=>matches(t,search.value.trim().toLowerCase()));if(p.length)openModal(p[Math.floor(Math.random()*p.length)].name)});viewFeatured.addEventListener('click',()=>{activeMeta='Featured';activeCategory='All';renderFilters();renderSections();$('#tools').scrollIntoView({behavior:'smooth'})});viewRecent.addEventListener('click',()=>{sortSelect.value='recent';activeMeta='All';activeCategory='All';renderFilters();renderSections();$('#tools').scrollIntoView({behavior:'smooth'})});
 const savedTheme=localStorage.getItem('theme');if(savedTheme)document.documentElement.dataset.theme=savedTheme;themeToggle.addEventListener('click',()=>{const n=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=n;localStorage.setItem('theme',n)});
-Promise.all([fetch('/data/tools.json').then(r=>r.json()),fetch('/data/categories.json').then(r=>r.json())]).then(([td,cd])=>{tools=td;categoryMeta=cd;categories=['All',...Object.keys(categoryMeta)];heroCounts.textContent=`${tools.length} tools · ${Object.keys(categoryMeta).length} categories`;renderSpotlights();renderFilters();renderSections();updateCompare();const p=new URLSearchParams(location.search);if(p.get('tool')&&tools.some(t=>t.name===p.get('tool')))openModal(p.get('tool'))}).catch(()=>{emptyState.hidden=false;emptyState.textContent='Unable to load the tool directory.'});
+function openToolFromUrl(){
+  const p=new URLSearchParams(window.location.search);
+  const requested=p.get('tool');
+  if(requested&&tools.some(t=>t.name===requested)){
+    openModal(requested);
+  }else if(toolModal&&!toolModal.hidden){
+    toolModal.hidden=true;
+    document.body.classList.remove('modal-open');
+  }
+}
+Promise.all([fetch('/data/tools.json',{cache:'no-store'}).then(r=>r.json()),fetch('/data/categories.json',{cache:'no-store'}).then(r=>r.json())]).then(([td,cd])=>{tools=td;categoryMeta=cd;categories=['All',...Object.keys(categoryMeta)];const securityUseful=tools.filter(t=>t.securityRelevance==='Security Native'||t.securityRelevance==='General AI for Security').length;heroCounts.textContent=`${tools.length} tools · ${securityUseful} security-relevant · ${Object.keys(categoryMeta).length} categories`;renderSpotlights();renderFilters();renderSections();updateCompare();openToolFromUrl()}).catch(()=>{emptyState.hidden=false;emptyState.textContent='Unable to load the tool directory.'});
+window.addEventListener('popstate',()=>{if(tools.length)openToolFromUrl()});
