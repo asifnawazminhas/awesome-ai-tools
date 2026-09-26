@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Submit a Tool | Awesome AI Tools</title>
+<meta name="description" content="Submit a new AI tool or report an update to Awesome AI Tools.">
+<link rel="canonical" href="https://ai.asifnawazminhas.com/submit/">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap nav">
+<a class="brand" href="/"><span class="brand-mark brand-mark-logo"><img src="/assets/img/ai-mark.svg" alt="Awesome AI Tools logo"></span><span class="brand-copy"><strong>AI Tools</strong><small>Community submissions</small></span></a>
+<nav class="nav-links"><a href="/">Home</a><a href="/#tools">All Tools</a><a href="/security-ai/">Security AI</a><a href="/about/">About</a></nav>
+</div></header>
+
+<main>
+<section class="submit-hero"><div class="wrap narrow-wrap">
+  <div class="eyebrow">Community contribution</div>
+  <h1>Submit an AI tool</h1>
+  <p class="hero-copy">Suggest a useful AI tool for the directory. The form checks the current catalogue for possible duplicates before preparing a GitHub submission.</p>
+  <div class="submission-flow">
+    <div><span>1</span><strong>Submit</strong><small>Provide the essential details.</small></div>
+    <div><span>2</span><strong>Review</strong><small>Metadata, links and duplication are checked.</small></div>
+    <div><span>3</span><strong>Verify</strong><small>The official source and current status are reviewed.</small></div>
+    <div><span>4</span><strong>Publish</strong><small>Approved tools are added to the directory.</small></div>
+  </div>
+</div></section>
+
+<section class="submit-body"><div class="wrap narrow-wrap">
+  <form id="toolSubmissionForm" class="submit-form">
+    <div class="form-grid">
+      <label><span>Tool name *</span><input id="submitName" name="name" required maxlength="80" placeholder="e.g. Example AI"></label>
+      <label><span>Official website *</span><input id="submitWebsite" name="website" type="url" required placeholder="https://example.com/"></label>
+      <label><span>Category *</span>
+        <select id="submitCategory" name="category" required>
+          <option value="">Select a category</option>
+          <option>AI Assistants</option><option>Coding Assistants</option><option>Research & Analysis</option>
+          <option>Local AI</option><option>AI Platforms & APIs</option><option>Image Generation</option><option>Security AI</option>
+        </select>
+      </label>
+      <label><span>Pricing</span><select id="submitPricing" name="pricing"><option>Unknown</option><option>Free</option><option>Freemium</option><option>Paid</option><option>Open source</option></select></label>
+      <label><span>GitHub / source repository</span><input id="submitGithub" name="github" type="url" placeholder="https://github.com/..."></label>
+      <label><span>Your reference / source</span><input id="submitSource" name="source" type="url" placeholder="Official docs, pricing page, repository..."></label>
+    </div>
+
+    <label class="full-field"><span>Short description *</span><textarea id="submitDesc" name="description" required maxlength="320" rows="4" placeholder="What does the tool do and why is it useful?"></textarea></label>
+
+    <div class="form-check-row">
+      <label><input id="submitOpenSource" type="checkbox"> Open source</label>
+      <label><input id="submitApi" type="checkbox"> API available</label>
+      <label><input id="submitLocal" type="checkbox"> Local/self-hosted option</label>
+    </div>
+
+    <div id="duplicateCheck" class="duplicate-check" aria-live="polite">Enter a tool name to check the current catalogue.</div>
+
+    <div class="submit-actions">
+      <button class="detail-btn primary" type="submit">Prepare GitHub submission ↗</button>
+      <a class="detail-btn subtle" href="https://github.com/asifnawazminhas/awesome-ai-tools/issues" target="_blank" rel="noopener noreferrer">View submissions</a>
+    </div>
+    <p class="form-note">Submitting opens a pre-filled GitHub issue. Nothing is sent automatically before you review and submit it on GitHub.</p>
+  </form>
+
+  <section class="submission-quality">
+    <div class="section-head"><div><div class="eyebrow">Quality standard</div><h2>What gets reviewed</h2></div></div>
+    <div class="quality-grid">
+      <div><strong>Duplicate check</strong><small>Existing and similarly named tools are surfaced first.</small></div>
+      <div><strong>Official source</strong><small>Website, repository and status should be traceable to a primary source.</small></div>
+      <div><strong>Useful metadata</strong><small>Category, pricing, platform and API details should be current.</small></div>
+      <div><strong>Maintenance</strong><small>Broken links, acquisitions, archives and discontinued tools can be reported.</small></div>
+    </div>
+  </section>
+</div></section>
+</main>
+
+<footer><div class="wrap footer-inner footer-rich"><div><strong>Awesome AI Tools</strong><span>&copy; 2026 Asif Nawaz Minhas. All rights reserved.</span></div><nav><a href="/about/">About</a><a href="/changelog/">Changelog</a><a href="https://github.com/asifnawazminhas/awesome-ai-tools" target="_blank" rel="noopener noreferrer">GitHub</a><a href="/security-ai/">Security AI</a></nav></div></footer>
+<script src="/assets/js/submit.js" defer></script>
+</body></html>

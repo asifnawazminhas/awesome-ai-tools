@@ -26,6 +26,12 @@ Live site: https://ai.asifnawazminhas.com/
 - SEO metadata and structured data
 - Sitemap and manifest
 - GitHub-based tool submission workflow
+- Rich tool profiles with overview, use cases and verification details
+- Similar-tool recommendations generated from category and metadata
+- Goal-based discovery for coding, research, security and local AI
+- Community submission page with duplicate checking
+- Pre-filled GitHub submission workflow
+- Per-tool outdated-information reporting workflow
 
 ## Categories
 
