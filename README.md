@@ -59,3 +59,19 @@ Includes PentestGPT, PentAGI, CAI, Strix and hackingBuddyGPT.
 - Status badges on tool cards
 - Copyright footer
 
+
+## v7 UX additions
+
+- Favorites stored locally in the browser
+- Compare up to 4 tools
+- Tool detail modal
+- Sort by Featured, A-Z, Category or Recently verified
+- Last verified date on every tool
+- Pricing and platform badges
+- Security AI subfilters
+- Submit a Tool GitHub issue link
+- Open Graph and Twitter/X metadata
+- Canonical URL
+- Web app manifest
+- Responsive comparison table
+- Keyboard-friendly modal close with Escape

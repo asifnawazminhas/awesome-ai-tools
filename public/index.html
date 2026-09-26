@@ -6,6 +6,16 @@
   <title>Awesome AI Tools</title>
   <meta name="description" content="A practical directory of AI assistants, coding tools, research tools, local LLMs, image generators and AI platforms.">
   <meta name="theme-color" content="#08101e">
+  <link rel="canonical" href="https://ai.asifnawazminhas.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Awesome AI Tools">
+  <meta property="og:description" content="A practical directory of AI assistants, coding tools, research tools, local LLMs, image generators and Security AI tools.">
+  <meta property="og:url" content="https://ai.asifnawazminhas.com/">
+  <meta property="og:site_name" content="Awesome AI Tools">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Awesome AI Tools">
+  <meta name="twitter:description" content="Explore practical AI tools for research, coding, local AI, image generation and cybersecurity.">
+  <link rel="manifest" href="/manifest.webmanifest">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -55,16 +65,62 @@ Build
 <section id="tools" class="directory">
   <div class="wrap">
     <div class="search-row">
-      <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search AI tools (e.g. chatgpt, coding, image, local, research...)"></div>
-      <button id="randomTool" class="random-btn" type="button">⤨ Random Tool</button>
+      <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search AI tools (e.g. chatgpt, coding, image, local, security...)"></div>
+      <button id="randomTool" class="random-btn" type="button">Random Tool</button>
     </div>
-    <div id="filters" class="filters"></div>
-    <div class="filter-label">Quick filters</div>
-    <div id="metaFilters" class="filters meta-filters"></div>
+
+    <div class="toolbar">
+      <div>
+        <div class="filter-label">Categories</div>
+        <div id="filters" class="filters"></div>
+      </div>
+      <div>
+        <div class="filter-label">Quick filters</div>
+        <div id="metaFilters" class="filters meta-filters"></div>
+      </div>
+      <div class="sort-wrap">
+        <label for="sortSelect">Sort</label>
+        <select id="sortSelect">
+          <option value="featured">Featured</option>
+          <option value="az">A-Z</option>
+          <option value="category">Category</option>
+          <option value="recent">Recently verified</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="securitySubfilters" class="security-subfilters" hidden>
+      <div class="filter-label">Security AI focus</div>
+      <div id="securityFilterButtons" class="filters"></div>
+    </div>
+
+    <div class="action-bar">
+      <button id="favoritesOnly" class="secondary-action" type="button">Favorites</button>
+      <button id="compareToggle" class="secondary-action" type="button">Compare <span id="compareCount">0</span></button>
+      <a class="secondary-action link-action" href="https://github.com/asifnawazminhas/awesome-ai-tools/issues/new" target="_blank" rel="noopener noreferrer">Submit a Tool</a>
+    </div>
     <div id="sections"></div>
     <div id="emptyState" class="empty-state" hidden>No matching tools found.</div>
   </div>
 </section>
+
+
+<section id="comparePanel" class="compare-panel" hidden>
+  <div class="wrap">
+    <div class="compare-head">
+      <div><div class="eyebrow">Compare</div><h2>Compare selected tools</h2></div>
+      <button id="clearCompare" class="secondary-action" type="button">Clear</button>
+    </div>
+    <div id="compareTable" class="compare-table-wrap"></div>
+  </div>
+</section>
+
+<div id="toolModal" class="modal-backdrop" hidden>
+  <div class="tool-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button id="modalClose" class="modal-close" type="button" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
 
 <section id="about" class="about">
   <div class="wrap about-card">

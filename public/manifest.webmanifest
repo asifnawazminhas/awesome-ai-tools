@@ -1,0 +1,10 @@
+{
+  "name": "Awesome AI Tools",
+  "short_name": "AI Tools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07101d",
+  "theme_color": "#08101e",
+  "description": "A practical directory of useful AI tools.",
+  "icons": []
+}
