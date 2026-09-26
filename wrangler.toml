@@ -2,4 +2,4 @@ name = "awesome-ai-tools"
 compatibility_date = "2026-09-26"
 
 [assets]
-directory = "."
+directory = "./public/"
