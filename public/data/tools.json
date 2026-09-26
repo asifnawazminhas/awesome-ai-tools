@@ -906,40 +906,6 @@
     "localLogo": "/assets/img/logos/pentagi.png"
   },
   {
-    "name": "CAI",
-    "short": "CAI",
-    "category": "Security AI",
-    "url": "https://github.com/aliasrobotics/cai",
-    "desc": "Cybersecurity AI framework for building AI-powered offensive and defensive security automation. The public repository is archived.",
-    "tags": [
-      "Security",
-      "Framework",
-      "Archived"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": false,
-    "featured": false,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "Red Teaming",
-    "lastVerified": "2026-09-26",
-    "logoText": "CAI",
-    "website": "https://github.com/aliasrobotics/cai",
-    "github": "https://github.com/aliasrobotics/cai",
-    "apiAvailable": false,
-    "added": "2026-09-01",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Archived",
-    "statusNote": "Public repository archived; retained for historical and research value.",
-    "source": "https://github.com/aliasrobotics/cai",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/cai.png"
-  },
-  {
     "name": "Strix",
     "short": "ST",
     "category": "Security AI",
@@ -1176,40 +1142,6 @@
     "source": "https://github.com/BugTraceAI/BugTraceAI",
     "lastUpdated": "2026-09-26",
     "localLogo": "/assets/img/logos/bugtraceai.png"
-  },
-  {
-    "name": "Pentest Copilot",
-    "short": "PC",
-    "category": "Security AI",
-    "url": "https://github.com/Dark-Moon-X/dm-bugbasesecurity-pentest-copilot",
-    "desc": "Open-source AI penetration testing assistant that can work with a Kali attack box and iterate through tool-driven workflows.",
-    "tags": [
-      "Pentesting",
-      "Assistant",
-      "Kali"
-    ],
-    "type": "Assistant",
-    "openSource": true,
-    "localModel": false,
-    "featured": false,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "Pentesting Assistants",
-    "lastVerified": "2026-09-26",
-    "logoText": "PC",
-    "website": "https://github.com/Dark-Moon-X/dm-bugbasesecurity-pentest-copilot",
-    "github": "https://github.com/Dark-Moon-X/dm-bugbasesecurity-pentest-copilot",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/Dark-Moon-X/dm-bugbasesecurity-pentest-copilot",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/pentest-copilot.png"
   },
   {
     "name": "Poe",

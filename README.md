@@ -109,3 +109,38 @@ Analytics is disabled by default in `public/index.html` until you provide your o
 - Added changelog and editorial policy pages.
 - Added stronger accessibility and keyboard support.
 - Total tools: 53.
+
+## v10.1 logo fix
+
+- Restored real favicon-based tool logos as the primary card icon.
+- Kept local generated icons only as a fallback if the external favicon fails.
+- Applied the same fallback behaviour to tool detail and category pages.
+
+## v10.2 status correction
+
+- Marked Pentest Copilot as `Archived`.
+- Added note that the repository was archived by its owner on 2026-07-22 and is read-only.
+
+## v10.3 status correction
+
+- Marked CAI as `Archived`.
+- Added note that the repository was archived by its owner on 2026-08-28 and is read-only.
+
+## v11
+
+- Removed archived tools: CAI and Pentest Copilot.
+- Cleaner card hierarchy and consistent heights.
+- Quieter Favorite / Compare / Share controls.
+- Improved logo containers and fallback handling.
+- Active status hidden from normal cards; only Experimental is surfaced.
+- Refined Featured, Recently Added and Popular sections.
+- Sticky/horizontal category navigation.
+- Search clear button, `/` keyboard shortcut, result count and reset filters.
+- Improved mobile layout and compare/modal spacing.
+- Better tool detail pages with breadcrumbs and cleaner actions.
+- Better empty states.
+- Automatic hero counts: 51 tools across 7 categories.
+- Expanded footer navigation.
+- Per-tool JSON-LD.
+- CSS preload and lazy-loaded images.
+- Total live tools: 51.
