@@ -11,8 +11,15 @@
 
   ready(() => {
     const shareBtn = document.getElementById('shareSite');
+    const shareMenu = document.getElementById('shareMenu');
+    const nativeShareBtn = document.getElementById('nativeShareBtn');
+    const shareStatus = document.getElementById('shareStatus');
     const topBtn = document.getElementById('scrollTopBtn');
     const bottomBtn = document.getElementById('scrollBottomBtn');
+
+    const SITE_URL = 'https://ai.asifnawazminhas.com/';
+    const SITE_TITLE = 'Awesome AI Tools';
+    const SHARE_TEXT = 'Explore and compare practical AI tools for research, coding, creativity and security.';
 
     const scroller = () => document.scrollingElement || document.documentElement || document.body;
 
@@ -71,54 +78,113 @@
       } catch (_) {
         copied = false;
       }
-
       area.remove();
       return copied;
     }
 
-    function flashButton(button, text) {
-      if (!button) return;
-      const original = button.dataset.originalLabel || button.textContent;
-      button.dataset.originalLabel = original;
-      button.textContent = text;
-      clearTimeout(button._flashTimer);
-      button._flashTimer = setTimeout(() => {
-        button.textContent = original;
-      }, 1600);
+    function setStatus(message) {
+      if (!shareStatus) return;
+      shareStatus.textContent = message;
+      clearTimeout(setStatus.timer);
+      setStatus.timer = setTimeout(() => {
+        shareStatus.textContent = '';
+      }, 1800);
     }
 
-    if (shareBtn) {
-      shareBtn.addEventListener('click', async (event) => {
+    function closeShareMenu() {
+      if (!shareMenu || !shareBtn) return;
+      shareMenu.hidden = true;
+      shareBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    function openShareMenu() {
+      if (!shareMenu || !shareBtn) return;
+      shareMenu.hidden = false;
+      shareBtn.setAttribute('aria-expanded', 'true');
+    }
+
+    if (shareBtn && shareMenu) {
+      shareBtn.addEventListener('click', (event) => {
         event.preventDefault();
+        event.stopPropagation();
+        shareMenu.hidden ? openShareMenu() : closeShareMenu();
+      });
 
-        const data = {
-          title: 'Awesome AI Tools',
-          text: 'Explore and compare practical AI tools for research, coding, creativity and security.',
-          url: 'https://ai.asifnawazminhas.com/'
-        };
+      document.addEventListener('click', (event) => {
+        if (!event.target.closest('.share-menu-wrap')) closeShareMenu();
+      });
 
-        // Native share is useful on mobile. If cancelled or unsupported,
-        // fall back to copying the canonical site URL.
-        if (navigator.share) {
-          try {
-            await navigator.share(data);
-            flashButton(shareBtn, 'Shared!');
-            return;
-          } catch (err) {
-            if (err && err.name === 'AbortError') {
-              // User cancelled the share sheet. Keep the button usable.
-              return;
-            }
-          }
-        }
-
-        const copied = await copyText(data.url);
-        if (copied) {
-          flashButton(shareBtn, 'Link copied!');
-        } else {
-          window.prompt('Copy this link:', data.url);
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          closeShareMenu();
+          shareBtn.focus();
         }
       });
+    }
+
+    const encodedUrl = encodeURIComponent(SITE_URL);
+    const encodedText = encodeURIComponent(`${SITE_TITLE} - ${SHARE_TEXT}`);
+    const encodedTitle = encodeURIComponent(SITE_TITLE);
+
+    const shareUrls = {
+      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+      x: `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`,
+      whatsapp: `https://wa.me/?text=${encodedText}%20${encodedUrl}`,
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+      email: `mailto:?subject=${encodedTitle}&body=${encodedText}%0A%0A${encodedUrl}`
+    };
+
+    document.querySelectorAll('[data-share]').forEach((item) => {
+      const network = item.dataset.share;
+
+      if (network === 'copy') {
+        item.addEventListener('click', async () => {
+          const copied = await copyText(SITE_URL);
+          if (copied) {
+            setStatus('Link copied to clipboard');
+            const label = item.querySelector('b');
+            const original = label.textContent;
+            label.textContent = 'Copied';
+            setTimeout(() => label.textContent = original, 1400);
+          } else {
+            window.prompt('Copy this link:', SITE_URL);
+          }
+        });
+        return;
+      }
+
+      if (shareUrls[network]) {
+        item.href = shareUrls[network];
+        if (network !== 'email') {
+          item.target = '_blank';
+          item.rel = 'noopener noreferrer';
+        }
+        item.addEventListener('click', () => {
+          setStatus(`Opening ${item.querySelector('b')?.textContent || 'share option'}…`);
+        });
+      }
+    });
+
+    if (nativeShareBtn) {
+      if (!navigator.share) {
+        nativeShareBtn.hidden = true;
+      } else {
+        nativeShareBtn.addEventListener('click', async () => {
+          try {
+            await navigator.share({
+              title: SITE_TITLE,
+              text: SHARE_TEXT,
+              url: SITE_URL
+            });
+            setStatus('Shared');
+          } catch (err) {
+            if (!err || err.name !== 'AbortError') {
+              const copied = await copyText(SITE_URL);
+              setStatus(copied ? 'Link copied instead' : 'Unable to open sharing');
+            }
+          }
+        });
+      }
     }
   });
 })();

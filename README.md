@@ -18,7 +18,8 @@ Live site: https://ai.asifnawazminhas.com/
 - Dedicated Security AI page
 - Tool verification metadata
 - Shareable tool links
-- Native site sharing with clipboard fallback
+- Social sharing menu for LinkedIn, X, WhatsApp, Facebook, email and copy link
+- Native device sharing when supported
 - Dedicated scroll-to-top and scroll-to-bottom controls
 - Custom Awesome AI Tools brand mark and favicon
 - Responsive dark/light UI
