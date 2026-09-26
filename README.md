@@ -1,6 +1,6 @@
 # Awesome AI Tools
 
-A security-first AI tools directory covering Security AI and general-purpose AI that can support legitimate security research and authorised security workflows.
+A focused AI security directory covering security-native AI and carefully selected general-purpose AI with practical value in legitimate security workflows.
 
 Live site: https://ai.asifnawazminhas.com/
 
@@ -48,7 +48,6 @@ The directory distinguishes between:
 - Research & Analysis
 - Local AI
 - AI Platforms & APIs
-- Image Generation
 - Security AI
 
 ## Project structure

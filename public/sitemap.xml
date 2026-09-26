@@ -2,64 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ai.asifnawazminhas.com/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/about/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/changelog/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/security-ai/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/assistants/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/changelog/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/coding/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/research/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/local-ai/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/platforms-apis/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/image-generation/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/research/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/security-ai/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/submit/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/aider/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/bugtraceai/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/tools/chatgpt/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/claude-red/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/tools/claude/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/gemini/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/deepseek/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/grok/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/perplexity/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/microsoft-copilot/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/loes/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/github-copilot/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/tools/cursor/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/replit/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/sourcegraph-cody/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/notebooklm/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/elicit/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/consensus/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/scite/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/connected-papers/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/ollama/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/lm-studio/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/hugging-face/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/openrouter/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/mistral-ai/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/midjourney/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/adobe-firefly/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/canva-ai/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/pentestgpt/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/pentagi/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/strix/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/darkmoon/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/deepseek/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/devin/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/gemini/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/github-copilot/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/grok/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/tools/hackingbuddygpt/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/tools/hexstrike-ai/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/darkmoon/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/shannon/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/nebula/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/bugtraceai/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/poe/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/meta-ai/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/le-chat/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/phind/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/aider/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/devin/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/v0/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/bolt-new/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/lovable/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/scispace/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/scholarcy/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/leonardo-ai/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/ideogram/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/runway/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/hugging-face/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/tools/jan/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/tools/garak/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/le-chat/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/lm-studio/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/microsoft-copilot/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/mistral-ai/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/nebula/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/notebooklm/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/nvidia-garak/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/ollama/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/openrouter/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/pentagi/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/pentestgpt/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/perplexity/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/phind/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/poe/</loc></url>
   <url><loc>https://ai.asifnawazminhas.com/tools/pyrit/</loc></url>
-  <url><loc>https://ai.asifnawazminhas.com/submit/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/replit/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/shannon/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/sourcegraph-cody/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/strix/</loc></url>
+  <url><loc>https://ai.asifnawazminhas.com/tools/tencent-ai-infra-guard/</loc></url>
 </urlset>
