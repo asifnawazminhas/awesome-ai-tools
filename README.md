@@ -75,3 +75,14 @@ Includes PentestGPT, PentAGI, CAI, Strix and hackingBuddyGPT.
 - Web app manifest
 - Responsive comparison table
 - Keyboard-friendly modal close with Escape
+
+## v7.1 fix
+
+- Fixed an issue where the tool detail modal overlay could appear on page load even though it was marked as hidden.
+- Added explicit CSS handling for the HTML `hidden` attribute.
+
+## v8
+
+Adds real favicon-based tool logos with fallback, favorites, compare, Featured and Recently Added spotlights, pricing/platform/API badges, last-verified dates, GitHub links, share/copy links, Security AI subfilters, sorting, detailed modals, JSON-LD, Open Graph/Twitter metadata, canonical URLs, a dedicated `/security-ai/` page, favicon set, manifest, accessibility improvements, and a privacy-friendly analytics hook.
+
+Analytics is disabled by default in `public/index.html` until you provide your own endpoint.
