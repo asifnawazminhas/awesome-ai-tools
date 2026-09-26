@@ -33,3 +33,15 @@ awesome-ai-tools/
 ```
 
 Intended custom domain: `ai.asifnawazminhas.com`
+
+## Footer
+
+The site footer displays: `© 2026 Asif Nawaz Minhas. All rights reserved.`
+
+## Included assistants
+
+The directory includes ChatGPT, Claude, Gemini, DeepSeek, Grok, Perplexity, Microsoft Copilot, Loes and more.
+
+## Security AI
+
+Includes PentestGPT, PentAGI, CAI, Strix and hackingBuddyGPT.
