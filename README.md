@@ -86,3 +86,12 @@ Includes PentestGPT, PentAGI, CAI, Strix and hackingBuddyGPT.
 Adds real favicon-based tool logos with fallback, favorites, compare, Featured and Recently Added spotlights, pricing/platform/API badges, last-verified dates, GitHub links, share/copy links, Security AI subfilters, sorting, detailed modals, JSON-LD, Open Graph/Twitter metadata, canonical URLs, a dedicated `/security-ai/` page, favicon set, manifest, accessibility improvements, and a privacy-friendly analytics hook.
 
 Analytics is disabled by default in `public/index.html` until you provide your own endpoint.
+
+## v9
+
+- Fixed long tool names being covered by Favorite / Compare / Share controls.
+- Action controls now have their own row below the tool title.
+- Added 18 additional tools.
+- Total directory size: 56 tools.
+- Expanded AI Assistants, Coding Assistants, Research & Analysis, Image Generation, Local AI and Security AI.
+- Added garak and PyRIT to LLM Security.
