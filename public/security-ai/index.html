@@ -4,7 +4,7 @@
 <title>AI Security | Awesome AI Tools</title>
 <meta name="description" content="AI security tools for penetration testing, autonomous penetration testing, red teaming, AppSec, LLM security, MCP security and vulnerability research.">
 <link rel="canonical" href="https://ai.asifnawazminhas.com/security-ai/">
-<link rel="stylesheet" href="/assets/css/style.css?v=15">
+<link rel="stylesheet" href="/assets/css/style.css?v=15.2">
 </head><body>
 <header class="site-header"><div class="wrap nav">
 <a class="brand" href="/"><span class="brand-mark brand-mark-logo"><img src="/assets/img/ai-mark.svg" alt="Awesome AI Tools logo"></span><span class="brand-copy"><strong>AI Tools</strong><small>AI Security</small></span></a>
@@ -18,123 +18,177 @@
 <p class="hero-copy">Security-native AI and carefully selected general-purpose AI for authorised security research, penetration testing, autonomous penetration testing, red teaming, AppSec, LLM security, MCP security and vulnerability research.</p>
 <div class="security-principle"><strong>Security Native</strong> means built specifically for cybersecurity or AI security. <strong>General AI for Security</strong> means a general-purpose tool included only because it has practical value in legitimate security workflows.</div>
 </div></section>
+
+<section class="security-search-section">
+  <div class="wrap">
+    <div class="security-search-wrap">
+      <span class="security-search-icon" aria-hidden="true">⌕</span>
+      <input id="securityToolSearch" type="search" placeholder="Search AI security tools..." aria-label="Search AI security tools">
+      <button id="securitySearchClear" type="button" aria-label="Clear search" hidden>×</button>
+    </div>
+    <div id="securitySearchCount" class="security-search-count"></div>
+  </div>
+</section>
+
 <section class="security-focus-home" id="native"><div class="wrap">
-<div class="section-head"><div><div class="eyebrow">Security Native</div><h2>Purpose-built AI security tools</h2></div><span class="section-count">13 tools</span></div>
+<div class="section-head"><div><div class="eyebrow">Security Native</div><h2>AI security tools</h2></div><span class="section-count">13 tools</span></div>
 <div class="security-capability-nav"><a href="#native">All</a><span>Penetration Testing</span><span>Autonomous Pentesting</span><span>Red Teaming</span><span>AppSec</span><span>LLM Security</span><span>MCP Security</span><span>AI Red Teaming</span><span>Vulnerability Research</span></div>
-<div class="security-focus-grid"><article class="security-focus-card">
+<div class="security-focus-grid"><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/bugtraceai.png" alt="BugTraceAI logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>BugTraceAI</h3></div></div>
 <p>Self-hosted multi-agent security platform for autonomous vulnerability discovery, validation and reporting.</p><div class="security-cap-tags"><span>Bug Bounty</span><span>Vulnerability Research</span><span>Security Automation</span></div>
-<div class="security-focus-actions"><a href="/tools/bugtraceai/">Details</a><a href="https://github.com/BugTraceAI/BugTraceAI" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/bugtraceai/">Details</a><a href="https://github.com/BugTraceAI/BugTraceAI" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/claude-red.png" alt="Claude-Red logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>Claude-Red</h3></div></div>
 <p>Open-source offensive security skills library for Claude, providing structured expert methodology across penetration testing, red teaming, AppSec, vulnerability research and related security domains.</p><div class="security-cap-tags"><span>Penetration Testing</span><span>Red Teaming</span><span>Web Application Security</span></div>
-<div class="security-focus-actions"><a href="/tools/claude-red/">Details</a><a href="https://github.com/SnailSploit/claude-red" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/claude-red/">Details</a><a href="https://github.com/SnailSploit/claude-red" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/darkmoon.png" alt="DarkMoon logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>DarkMoon</h3></div></div>
 <p>Open-source autonomous AI penetration testing platform covering web, API, cloud, Active Directory, Kubernetes and AI/LLM targets.</p><div class="security-cap-tags"><span>Pentesting</span><span>Red Teaming</span><span>Local / Private</span></div>
-<div class="security-focus-actions"><a href="/tools/darkmoon/">Details</a><a href="https://github.com/ASCIT31/Dark-Moon" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/darkmoon/">Details</a><a href="https://github.com/ASCIT31/Dark-Moon" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/hackingbuddygpt.png" alt="hackingBuddyGPT logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>hackingBuddyGPT</h3></div></div>
 <p>Research framework for exploring LLM-assisted offensive security tasks and autonomous security workflows.</p><div class="security-cap-tags"><span>Security Research</span><span>Pentesting</span><span>LLM-assisted Testing</span></div>
-<div class="security-focus-actions"><a href="/tools/hackingbuddygpt/">Details</a><a href="https://github.com/ipa-lab/hackingBuddyGPT" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/hackingbuddygpt/">Details</a><a href="https://github.com/ipa-lab/hackingBuddyGPT" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/hexstrike-ai.png" alt="HexStrike AI logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>HexStrike AI</h3></div></div>
 <p>AI-powered penetration testing and MCP framework that orchestrates a large security-tool ecosystem with autonomous agents.</p><div class="security-cap-tags"><span>Pentesting</span><span>MCP</span><span>Security Automation</span></div>
-<div class="security-focus-actions"><a href="/tools/hexstrike-ai/">Details</a><a href="https://github.com/dennislee928/Hexstrike-AI" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/hexstrike-ai/">Details</a><a href="https://github.com/dennislee928/Hexstrike-AI" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/nebula.png" alt="Nebula logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>Nebula</h3></div></div>
 <p>AI-powered penetration testing workbench for reconnaissance, notes, vulnerability analysis, evidence and reporting.</p><div class="security-cap-tags"><span>Pentesting</span><span>Security Workflow</span><span>Research</span></div>
-<div class="security-focus-actions"><a href="/tools/nebula/">Details</a><a href="https://github.com/berylliumsec/nebula" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/nebula/">Details</a><a href="https://github.com/berylliumsec/nebula" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/garak.png" alt="NVIDIA garak logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>NVIDIA garak</h3></div></div>
 <p>Open-source LLM vulnerability scanner from NVIDIA for probing generative AI models and applications for security weaknesses, unwanted behaviours and known failure modes.</p><div class="security-cap-tags"><span>LLM Security</span><span>AI Security Testing</span><span>Red Teaming</span></div>
-<div class="security-focus-actions"><a href="/tools/nvidia-garak/">Details</a><a href="https://github.com/NVIDIA/garak" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/nvidia-garak/">Details</a><a href="https://github.com/NVIDIA/garak" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/pentagi.png" alt="PentAGI logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>PentAGI</h3></div></div>
 <p>Autonomous multi-agent platform for complex penetration testing workflows and security automation.</p><div class="security-cap-tags"><span>Pentesting</span><span>Red Teaming</span><span>Security Automation</span></div>
-<div class="security-focus-actions"><a href="/tools/pentagi/">Details</a><a href="https://github.com/StoyKK/Pentagi" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/pentagi/">Details</a><a href="https://github.com/StoyKK/Pentagi" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/pentestgpt.png" alt="PentestGPT logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>PentestGPT</h3></div></div>
 <p>AI-assisted penetration testing framework designed to guide testing progress and specific security operations.</p><div class="security-cap-tags"><span>Pentesting</span><span>Security Research</span><span>LLM-assisted Testing</span></div>
-<div class="security-focus-actions"><a href="/tools/pentestgpt/">Details</a><a href="https://github.com/artyang/PentestGPT" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/pentestgpt/">Details</a><a href="https://github.com/artyang/PentestGPT" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/pyrit.png" alt="PyRIT logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>PyRIT</h3></div></div>
 <p>Open-source framework for identifying risks in generative AI systems through automated red teaming workflows.</p><div class="security-cap-tags"><span>AI Security</span><span>Red Teaming</span><span>LLM Security</span></div>
-<div class="security-focus-actions"><a href="/tools/pyrit/">Details</a><a href="https://github.com/Azure/PyRIT" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/pyrit/">Details</a><a href="https://github.com/Azure/PyRIT" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/shannon.png" alt="Shannon logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>Shannon</h3></div></div>
 <p>Autonomous AI pentester for web applications and APIs that combines source analysis with live validation of vulnerabilities.</p><div class="security-cap-tags"><span>AppSec</span><span>API Security</span><span>Vulnerability Validation</span></div>
-<div class="security-focus-actions"><a href="/tools/shannon/">Details</a><a href="https://github.com/KeygraphHQ/shannon" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/shannon/">Details</a><a href="https://github.com/KeygraphHQ/shannon" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/strix.png" alt="Strix logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>Strix</h3></div></div>
 <p>Open-source autonomous AI pentesting platform for discovering, validating and reporting application vulnerabilities.</p><div class="security-cap-tags"><span>AppSec</span><span>Pentesting</span><span>Vulnerability Validation</span></div>
-<div class="security-focus-actions"><a href="/tools/strix/">Details</a><a href="https://github.com/usestrix/strix" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/strix/">Details</a><a href="https://github.com/usestrix/strix" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/tencent-ai-infra-guard.png" alt="Tencent AI-Infra-Guard logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">Security Native</div><h3>Tencent AI-Infra-Guard</h3></div></div>
 <p>Full-stack AI red teaming platform from Tencent Zhuque Lab for Agent, Skills, MCP, AI infrastructure and LLM security assessment.</p><div class="security-cap-tags"><span>AI Red Teaming</span><span>Agent Security</span><span>MCP Security</span></div>
 <div class="security-focus-actions"><a href="/tools/tencent-ai-infra-guard/">Details</a><a href="https://github.com/Tencent/AI-Infra-Guard" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article></div>
 </div></section>
 <section class="security-focus-home general-security-home" id="general-ai"><div class="wrap">
 <div class="section-head"><div><div class="eyebrow">General AI for Security</div><h2>General AI retained for security workflows</h2><p>No image-generation-only or unrelated AI tools are included. These tools remain because they can support security research, code analysis, scripting, documentation, local/private workflows or AI model research.</p></div><span class="section-count">23 tools</span></div>
-<div class="security-focus-grid"><article class="security-focus-card">
+<div class="security-focus-grid"><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=aider.chat&amp;sz=64" data-fallback="/assets/img/logos/aider.png" alt="Aider logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Aider</h3></div></div>
 <p>Open-source AI pair programming tool that works directly with local Git repositories from the terminal.</p><div class="security-cap-tags"><span>Code Editing</span><span>Scripting</span><span>Code Review</span></div>
-<div class="security-focus-actions"><a href="/tools/aider/">Details</a><a href="https://aider.chat/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/aider/">Details</a><a href="https://aider.chat/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=chatgpt.com&amp;sz=64" data-fallback="/assets/img/logos/chatgpt.png" alt="ChatGPT logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>ChatGPT</h3></div></div>
 <p>General-purpose AI assistant for research, writing, coding, analysis and multimodal workflows.</p><div class="security-cap-tags"><span>Security Research</span><span>Code Analysis</span><span>Scripting</span></div>
-<div class="security-focus-actions"><a href="/tools/chatgpt/">Details</a><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/chatgpt/">Details</a><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=claude.ai&amp;sz=64" data-fallback="/assets/img/logos/claude.png" alt="Claude logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Claude</h3></div></div>
 <p>AI assistant suited to reasoning, long-context analysis, writing and coding workflows.</p><div class="security-cap-tags"><span>Security Research</span><span>Code Review</span><span>Analysis</span></div>
-<div class="security-focus-actions"><a href="/tools/claude/">Details</a><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/claude/">Details</a><a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=cursor.com&amp;sz=64" data-fallback="/assets/img/logos/cursor.png" alt="Cursor logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Cursor</h3></div></div>
 <p>AI-first code editor for generating, understanding and modifying software projects.</p><div class="security-cap-tags"><span>Code Analysis</span><span>Scripting</span><span>Codebase Review</span></div>
-<div class="security-focus-actions"><a href="/tools/cursor/">Details</a><a href="https://www.cursor.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/cursor/">Details</a><a href="https://www.cursor.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=deepseek.com&amp;sz=64" data-fallback="/assets/img/logos/deepseek.png" alt="DeepSeek logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>DeepSeek</h3></div></div>
 <p>AI assistant focused on reasoning, coding and technical problem solving.</p><div class="security-cap-tags"><span>Code Analysis</span><span>Scripting</span><span>Security Research</span></div>
-<div class="security-focus-actions"><a href="/tools/deepseek/">Details</a><a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/deepseek/">Details</a><a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=devin.ai&amp;sz=64" data-fallback="/assets/img/logos/devin.png" alt="Devin logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Devin</h3></div></div>
 <p>Agentic software engineering platform designed to plan, code, test and execute development tasks.</p><div class="security-cap-tags"><span>Coding</span><span>Automation</span><span>Developer Workflow</span></div>
-<div class="security-focus-actions"><a href="/tools/devin/">Details</a><a href="https://devin.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/devin/">Details</a><a href="https://devin.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&amp;sz=64" data-fallback="/assets/img/logos/gemini.png" alt="Gemini logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Gemini</h3></div></div>
 <p>Google&#x27;s multimodal AI assistant for research, productivity and creative work.</p><div class="security-cap-tags"><span>Security Research</span><span>Code Analysis</span><span>Scripting</span></div>
-<div class="security-focus-actions"><a href="/tools/gemini/">Details</a><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/gemini/">Details</a><a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" data-fallback="/assets/img/logos/github-copilot.png" alt="GitHub Copilot logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>GitHub Copilot</h3></div></div>
 <p>AI coding assistant integrated with popular developer workflows and IDEs.</p><div class="security-cap-tags"><span>Scripting</span><span>Code Review</span><span>Developer Workflow</span></div>
-<div class="security-focus-actions"><a href="/tools/github-copilot/">Details</a><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/github-copilot/">Details</a><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=grok.com&amp;sz=64" data-fallback="/assets/img/logos/grok.png" alt="Grok logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Grok</h3></div></div>
 <p>AI assistant from xAI for general questions, research, coding and real-time information workflows.</p><div class="security-cap-tags"><span>Security Research</span><span>Threat Research</span><span>Source Discovery</span></div>
-<div class="security-focus-actions"><a href="/tools/grok/">Details</a><a href="https://grok.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/grok/">Details</a><a href="https://grok.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=huggingface.co&amp;sz=64" data-fallback="/assets/img/logos/hugging-face.png" alt="Hugging Face logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Hugging Face</h3></div></div>
 <p>Model, dataset and application ecosystem for building and exploring machine learning systems.</p><div class="security-cap-tags"><span>AI Security</span><span>Model Research</span><span>Datasets</span></div>
-<div class="security-focus-actions"><a href="/tools/hugging-face/">Details</a><a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/hugging-face/">Details</a><a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=jan.ai&amp;sz=64" data-fallback="/assets/img/logos/jan.png" alt="Jan logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Jan</h3></div></div>
 <p>Open-source desktop application for running and managing AI models locally.</p><div class="security-cap-tags"><span>Local / Private</span><span>Security Research</span><span>Model Experimentation</span></div>
-<div class="security-focus-actions"><a href="/tools/jan/">Details</a><a href="https://jan.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/jan/">Details</a><a href="https://jan.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=mistral.ai&amp;sz=64" data-fallback="/assets/img/logos/le-chat.png" alt="Le Chat logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Le Chat</h3></div></div>
 <p>Mistral AI&#x27;s conversational assistant for general use, reasoning and productivity.</p><div class="security-cap-tags"><span>Security Research</span><span>Analysis</span><span>Report Writing</span></div>
-<div class="security-focus-actions"><a href="/tools/le-chat/">Details</a><a href="https://chat.mistral.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/le-chat/">Details</a><a href="https://chat.mistral.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=lmstudio.ai&amp;sz=64" data-fallback="/assets/img/logos/lm-studio.png" alt="LM Studio logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>LM Studio</h3></div></div>
 <p>Desktop application for discovering and running compatible language models locally.</p><div class="security-cap-tags"><span>Local / Private</span><span>Security Research</span><span>Model Experimentation</span></div>
-<div class="security-focus-actions"><a href="/tools/lm-studio/">Details</a><a href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/lm-studio/">Details</a><a href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=copilot.microsoft.com&amp;sz=64" data-fallback="/assets/img/logos/microsoft-copilot.png" alt="Microsoft Copilot logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Microsoft Copilot</h3></div></div>
 <p>Microsoft&#x27;s AI assistant for productivity, search and ecosystem-integrated workflows.</p><div class="security-cap-tags"><span>Documentation</span><span>Productivity</span><span>Security Research</span></div>
-<div class="security-focus-actions"><a href="/tools/microsoft-copilot/">Details</a><a href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/microsoft-copilot/">Details</a><a href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=mistral.ai&amp;sz=64" data-fallback="/assets/img/logos/mistral-ai.png" alt="Mistral AI logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Mistral AI</h3></div></div>
 <p>AI model provider offering general-purpose and developer-focused models and APIs.</p><div class="security-cap-tags"><span>Model Research</span><span>API</span><span>Local / Private</span></div>
-<div class="security-focus-actions"><a href="/tools/mistral-ai/">Details</a><a href="https://mistral.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/mistral-ai/">Details</a><a href="https://mistral.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=notebooklm.google.com&amp;sz=64" data-fallback="/assets/img/logos/notebooklm.png" alt="NotebookLM logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>NotebookLM</h3></div></div>
 <p>Research and study assistant designed to work with your own source material and documents.</p><div class="security-cap-tags"><span>Security Research</span><span>Documentation</span><span>Knowledge Synthesis</span></div>
-<div class="security-focus-actions"><a href="/tools/notebooklm/">Details</a><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/notebooklm/">Details</a><a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=ollama.com&amp;sz=64" data-fallback="/assets/img/logos/ollama.png" alt="Ollama logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Ollama</h3></div></div>
 <p>Simple local runtime for downloading and running supported language models on your own system.</p><div class="security-cap-tags"><span>Local / Private</span><span>Security Research</span><span>Model Experimentation</span></div>
-<div class="security-focus-actions"><a href="/tools/ollama/">Details</a><a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/ollama/">Details</a><a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=openrouter.ai&amp;sz=64" data-fallback="/assets/img/logos/openrouter.png" alt="OpenRouter logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>OpenRouter</h3></div></div>
 <p>Unified API gateway for experimenting with and routing requests across multiple AI models.</p><div class="security-cap-tags"><span>Model Comparison</span><span>API</span><span>AI Security Research</span></div>
-<div class="security-focus-actions"><a href="/tools/openrouter/">Details</a><a href="https://openrouter.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/openrouter/">Details</a><a href="https://openrouter.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=perplexity.ai&amp;sz=64" data-fallback="/assets/img/logos/perplexity.png" alt="Perplexity logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Perplexity</h3></div></div>
 <p>AI-powered search and research assistant with web-backed answers and sources.</p><div class="security-cap-tags"><span>Security Research</span><span>Threat Research</span><span>Source Discovery</span></div>
-<div class="security-focus-actions"><a href="/tools/perplexity/">Details</a><a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/perplexity/">Details</a><a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=phind.com&amp;sz=64" data-fallback="/assets/img/logos/phind.png" alt="Phind logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Phind</h3></div></div>
 <p>AI search and answer engine focused on technical questions, developers and problem solving.</p><div class="security-cap-tags"><span>Code Analysis</span><span>Scripting</span><span>Developer Research</span></div>
-<div class="security-focus-actions"><a href="/tools/phind/">Details</a><a href="https://www.phind.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/phind/">Details</a><a href="https://www.phind.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=poe.com&amp;sz=64" data-fallback="/assets/img/logos/poe.png" alt="Poe logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Poe</h3></div></div>
 <p>Multi-model AI platform for accessing and comparing assistants from different providers.</p><div class="security-cap-tags"><span>Multi-model Research</span><span>Security Research</span><span>Learning</span></div>
-<div class="security-focus-actions"><a href="/tools/poe/">Details</a><a href="https://poe.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/poe/">Details</a><a href="https://poe.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=replit.com&amp;sz=64" data-fallback="/assets/img/logos/replit.png" alt="Replit logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Replit</h3></div></div>
 <p>Browser-based development environment with AI-assisted coding and deployment workflows.</p><div class="security-cap-tags"><span>Scripting</span><span>Prototyping</span><span>Developer Workflow</span></div>
-<div class="security-focus-actions"><a href="/tools/replit/">Details</a><a href="https://replit.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card">
+<div class="security-focus-actions"><a href="/tools/replit/">Details</a><a href="https://replit.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article><article class="security-focus-card" data-security-card>
 <div class="security-focus-head"><div class="security-focus-logo"><img src="https://www.google.com/s2/favicons?domain=sourcegraph.com&amp;sz=64" data-fallback="/assets/img/logos/sourcegraph-cody.png" alt="Sourcegraph Cody logo" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback"></div><div><div class="security-focus-badge">General AI for Security</div><h3>Sourcegraph Cody</h3></div></div>
 <p>AI coding assistant designed for understanding and working across larger codebases.</p><div class="security-cap-tags"><span>Codebase Analysis</span><span>Code Review</span><span>Developer Research</span></div>
 <div class="security-focus-actions"><a href="/tools/sourcegraph-cody/">Details</a><a href="https://sourcegraph.com/cody" target="_blank" rel="noopener noreferrer">Website ↗</a></div></article></div>
 </div></section>
 </main>
 <footer><div class="wrap footer-inner footer-rich"><div><strong>Awesome AI Tools</strong><span>&copy; 2026 Asif Nawaz Minhas. All rights reserved.</span></div><nav><a href="/about/">About</a><a href="/changelog/">Changelog</a><a href="https://github.com/asifnawazminhas/awesome-ai-tools" target="_blank" rel="noopener noreferrer">GitHub</a><a href="/submit/">Submit a Tool</a></nav></div></footer>
+
+<script>
+(() => {
+  const input = document.getElementById('securityToolSearch');
+  const clear = document.getElementById('securitySearchClear');
+  const count = document.getElementById('securitySearchCount');
+  if (!input) return;
+
+  const cards = [...document.querySelectorAll('[data-security-card]')];
+  const sections = [...document.querySelectorAll('.security-focus-home')];
+
+  function filterSecurityTools() {
+    const q = input.value.trim().toLowerCase();
+    let visible = 0;
+
+    cards.forEach(card => {
+      const match = !q || card.textContent.toLowerCase().includes(q);
+      card.hidden = !match;
+      if (match) visible++;
+    });
+
+    sections.forEach(section => {
+      const sectionCards = [...section.querySelectorAll('[data-security-card]')];
+      const anyVisible = sectionCards.some(card => !card.hidden);
+      section.classList.toggle('search-empty-section', !anyVisible && !!q);
+    });
+
+    clear.hidden = !q;
+    count.textContent = q ? `${visible} tool${visible === 1 ? '' : 's'} found` : `${cards.length} tools available`;
+  }
+
+  input.addEventListener('input', filterSecurityTools);
+  clear.addEventListener('click', () => {
+    input.value = '';
+    input.focus();
+    filterSecurityTools();
+  });
+
+  filterSecurityTools();
+})();
+</script>
+
 </body></html>
