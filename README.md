@@ -45,3 +45,17 @@ The directory includes ChatGPT, Claude, Gemini, DeepSeek, Grok, Perplexity, Micr
 ## Security AI
 
 Includes PentestGPT, PentAGI, CAI, Strix and hackingBuddyGPT.
+
+## v6 additions
+
+- Expanded Security AI category
+- HexStrike AI
+- DarkMoon
+- Shannon
+- Nebula
+- BugTraceAI
+- Pentest Copilot
+- Featured, Open Source, Local AI, Autonomous and Security quick filters
+- Status badges on tool cards
+- Copyright footer
+
