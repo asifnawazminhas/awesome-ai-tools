@@ -7,7 +7,7 @@ Live site: https://ai.asifnawazminhas.com/
 ## Features
 
 - Searchable AI tools directory
-- Category filters
+- Category and quick filters
 - Favorites stored locally in the browser
 - Compare mode
 - Featured, Recently Added and Popular sections
@@ -16,7 +16,7 @@ Live site: https://ai.asifnawazminhas.com/
 - Dedicated tool detail pages
 - Category landing pages
 - Dedicated Security AI page
-- Tool status and verification metadata
+- Tool verification metadata
 - Shareable tool links
 - Responsive dark/light UI
 - SEO metadata and structured data
@@ -74,8 +74,6 @@ Category metadata is maintained in:
 public/data/categories.json
 ```
 
-This keeps content separate from the frontend JavaScript and makes future maintenance easier.
-
 ## Submit a Tool
 
 New tools and corrections can be submitted through GitHub Issues:
@@ -86,8 +84,6 @@ https://github.com/asifnawazminhas/awesome-ai-tools/issues/new
 
 The site is deployed through Cloudflare Workers static assets.
 
-The current deployment command is:
-
 ```bash
 npx wrangler deploy --assets ./public/
 ```
@@ -96,20 +92,14 @@ Pushing changes to the connected `main` branch triggers deployment through Cloud
 
 ## Changelog
 
-Release and maintenance history is kept on the site:
+Release and maintenance history is kept on the site at:
 
 ```text
 /changelog/
 ```
-
-The README intentionally does not duplicate the full release history.
 
 ## Licence
 
 MIT License.
 
 Copyright © 2026 Asif Nawaz Minhas.
-
-## Current UI note
-
-Card action buttons use a consistent fixed height. Tool cards with GitHub links now align with cards that only have Details and Website actions.
