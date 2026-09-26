@@ -27,3 +27,48 @@ modalClose.addEventListener('click',closeModal);toolModal.addEventListener('clic
 favoritesOnly.addEventListener('click',()=>{favoritesMode=!favoritesMode;renderFilters();renderSections()});compareToggle.addEventListener('click',()=>compare.size>=2&&comparePanel.scrollIntoView({behavior:'smooth'}));clearCompare.addEventListener('click',()=>{compare.clear();updateCompare();renderSections()});search.addEventListener('input',renderSections);clearSearch.addEventListener('click',()=>{search.value='';search.focus();renderSections()});resetFilters.addEventListener('click',resetAll);emptyReset.addEventListener('click',resetAll);sortSelect.addEventListener('change',renderSections);randomTool.addEventListener('click',()=>{const p=tools.filter(t=>matches(t,search.value.trim().toLowerCase()));if(p.length)openModal(p[Math.floor(Math.random()*p.length)].name)});viewFeatured.addEventListener('click',()=>{activeMeta='Featured';activeCategory='All';renderFilters();renderSections();$('#tools').scrollIntoView({behavior:'smooth'})});viewRecent.addEventListener('click',()=>{sortSelect.value='recent';activeMeta='All';activeCategory='All';renderFilters();renderSections();$('#tools').scrollIntoView({behavior:'smooth'})});
 const savedTheme=localStorage.getItem('theme');if(savedTheme)document.documentElement.dataset.theme=savedTheme;themeToggle.addEventListener('click',()=>{const n=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=n;localStorage.setItem('theme',n)});
 Promise.all([fetch('/data/tools.json').then(r=>r.json()),fetch('/data/categories.json').then(r=>r.json())]).then(([td,cd])=>{tools=td;categoryMeta=cd;categories=['All',...Object.keys(categoryMeta)];heroCounts.textContent=`${tools.length} tools · ${Object.keys(categoryMeta).length} categories`;renderSpotlights();renderFilters();renderSections();updateCompare();const p=new URLSearchParams(location.search);if(p.get('tool')&&tools.some(t=>t.name===p.get('tool')))openModal(p.get('tool'))}).catch(()=>{emptyState.hidden=false;emptyState.textContent='Unable to load the tool directory.'});
+
+
+// v12 site sharing and smart page scroll
+const shareSite=document.getElementById('shareSite');
+const pageScrollToggle=document.getElementById('pageScrollToggle');
+
+async function shareSiteAction(){
+  const shareData={
+    title:'Awesome AI Tools',
+    text:'Explore and compare practical AI tools for research, coding, creativity and security.',
+    url:'https://ai.asifnawazminhas.com/'
+  };
+  try{
+    if(navigator.share){
+      await navigator.share(shareData);
+    }else{
+      await navigator.clipboard.writeText(shareData.url);
+      const previous=shareSite.textContent;
+      shareSite.textContent='Copied!';
+      setTimeout(()=>shareSite.textContent=previous,1400);
+    }
+  }catch(e){}
+}
+if(shareSite) shareSite.addEventListener('click',shareSiteAction);
+
+function updatePageScrollToggle(){
+  if(!pageScrollToggle) return;
+  const maxScroll=Math.max(document.documentElement.scrollHeight-window.innerHeight,0);
+  const progress=maxScroll ? window.scrollY/maxScroll : 0;
+  const goTop=progress>0.45;
+  pageScrollToggle.querySelector('span').textContent=goTop?'↑':'↓';
+  pageScrollToggle.setAttribute('aria-label',goTop?'Scroll to top':'Scroll to bottom');
+  pageScrollToggle.setAttribute('title',goTop?'Scroll to top':'Scroll to bottom');
+  pageScrollToggle.classList.toggle('to-top',goTop);
+  pageScrollToggle.hidden=maxScroll<220;
+}
+if(pageScrollToggle){
+  pageScrollToggle.addEventListener('click',()=>{
+    const goTop=pageScrollToggle.classList.contains('to-top');
+    window.scrollTo({top:goTop?0:document.documentElement.scrollHeight,behavior:'smooth'});
+  });
+  window.addEventListener('scroll',updatePageScrollToggle,{passive:true});
+  window.addEventListener('resize',updatePageScrollToggle);
+  updatePageScrollToggle();
+}
