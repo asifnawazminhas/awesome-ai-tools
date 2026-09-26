@@ -95,3 +95,17 @@ Analytics is disabled by default in `public/index.html` until you provide your o
 - Total directory size: 56 tools.
 - Expanded AI Assistants, Coding Assistants, Research & Analysis, Image Generation, Local AI and Security AI.
 - Added garak and PyRIT to LLM Security.
+
+## v10 mature directory upgrade
+
+- Removed Continue, Tabnine and Windsurf due to product/acquisition/redirect changes.
+- Moved tool data to `public/data/tools.json`.
+- Added 53 dedicated tool pages.
+- Added category landing pages.
+- Added local logo assets.
+- Added browser-local Popular / Trending section.
+- Added maintenance status (`Active`, `Experimental`, `Archived`).
+- Added source verification field.
+- Added changelog and editorial policy pages.
+- Added stronger accessibility and keyboard support.
+- Total tools: 53.

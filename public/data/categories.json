@@ -1,0 +1,30 @@
+{
+  "AI Assistants": [
+    "◉",
+    "General-purpose AI assistants for research, writing, coding and analysis."
+  ],
+  "Coding Assistants": [
+    "</>",
+    "AI tools for developers, coding, debugging and software development."
+  ],
+  "Research & Analysis": [
+    "⌕",
+    "AI tools for research, analysis, academic work and information discovery."
+  ],
+  "Local AI": [
+    "⌂",
+    "Run AI models locally for privacy, experimentation and offline workflows."
+  ],
+  "AI Platforms & APIs": [
+    "◇",
+    "Model platforms, APIs and developer ecosystems for building with AI."
+  ],
+  "Image Generation": [
+    "▣",
+    "AI tools for visual creation, image generation and design workflows."
+  ],
+  "Security AI": [
+    "⌾",
+    "AI-powered tools and research frameworks for penetration testing, red teaming and security automation."
+  ]
+}
