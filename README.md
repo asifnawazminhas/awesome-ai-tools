@@ -12,6 +12,19 @@ The directory distinguishes between:
 - **General AI for Security** — general-purpose AI that can support legitimate security research, code analysis, scripting, documentation and learning.
 - **General AI** — useful tools retained in the broader catalogue without being presented as security products.
 
+
+## AI Security Training & Certifications
+
+The directory now includes a dedicated training and certifications section.
+
+Initial listing:
+
+- OffSec AI-300: Advanced AI Red Teaming
+- Certification: OffSec AI Red Teamer (OSAI / OSAI+)
+- Official source: https://www.offsec.com/courses/ai-300/
+
+Training and certification listings are kept separate from tool listings.
+
 ## Features
 
 - Searchable AI tools directory
