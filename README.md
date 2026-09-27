@@ -133,3 +133,7 @@ Release and maintenance history is kept on the site at:
 MIT License.
 
 Copyright © 2026 Asif Nawaz Minhas.
+
+## v16.1
+
+- Added the official OffSec AI-300 artwork to the homepage certification promo and Training & Certifications page.

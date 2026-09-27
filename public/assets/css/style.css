@@ -987,3 +987,26 @@ a{color:inherit}button,input{font:inherit}.wrap{width:min(1480px,calc(100% - 48p
   .cert-promo{grid-template-columns:1fr}
   .cert-promo-meta{padding-left:0}
 }
+
+
+/* v16.1 OffSec AI-300 official artwork */
+.cert-provider-image{
+  width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;
+  border:1px solid var(--line);background:#160f18;display:block
+}
+.cert-provider-image img{
+  width:100%;height:100%;object-fit:cover;display:block
+}
+.cert-provider{display:block}
+.cert-provider>div:last-child{margin-top:10px}
+
+.cert-promo-image{
+  width:94px;height:58px;border-radius:11px;overflow:hidden;
+  border:1px solid rgba(124,128,255,.22);background:#160f18
+}
+.cert-promo-image img{
+  width:100%;height:100%;object-fit:cover;display:block
+}
+@media(max-width:600px){
+  .cert-promo-image{width:100%;height:auto;aspect-ratio:16/9}
+}
