@@ -1010,3 +1010,19 @@ a{color:inherit}button,input{font:inherit}.wrap{width:min(1480px,calc(100% - 48p
 @media(max-width:600px){
   .cert-promo-image{width:100%;height:auto;aspect-ratio:16/9}
 }
+
+
+/* v16.2 Hack The Box COAE certification */
+.cert-htb{margin-top:16px}
+.cert-provider-fallback{display:grid;place-items:center}
+.cert-provider-mark-htb{
+  width:70px;height:42px;border-radius:10px;display:grid;place-items:center;
+  font-weight:900;letter-spacing:.08em;background:linear-gradient(135deg,#9fef00,#5cc800);
+  color:#0b1107
+}
+.cert-promo-secondary{margin-top:10px}
+.cert-promo-htb{
+  width:54px;height:54px;border-radius:15px;display:grid;place-items:center;
+  font-size:13px;letter-spacing:.06em;background:linear-gradient(135deg,#9fef00,#5cc800);
+  color:#0b1107;font-weight:900
+}

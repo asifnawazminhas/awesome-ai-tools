@@ -137,3 +137,16 @@ Copyright © 2026 Asif Nawaz Minhas.
 ## v16.1
 
 - Added the official OffSec AI-300 artwork to the homepage certification promo and Training & Certifications page.
+
+## v16.2
+
+Added Hack The Box Academy:
+
+- HTB Certified Offensive AI Expert (HTB COAE)
+- AI Red Teamer job-role path
+- 12-module curriculum co-developed with Google
+- 7-day hands-on assessment with technical report
+- adversarial ML, prompt injection, jailbreaking, LLM output exploitation, AI application/system security, AI privacy and AI defense
+
+Official certification page:
+https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert
