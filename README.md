@@ -150,3 +150,10 @@ Added Hack The Box Academy:
 
 Official certification page:
 https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai-expert
+
+## v16.3
+
+- Moved Training & Certifications to the bottom of the homepage.
+- Kept the AI security tool directory as the primary focus.
+- Aligned OffSec AI-300 and HTB COAE cards to equal widths.
+- Fixed HTB certification layout so it no longer overflows the site width.
