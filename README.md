@@ -157,3 +157,9 @@ https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai
 - Kept the AI security tool directory as the primary focus.
 - Aligned OffSec AI-300 and HTB COAE cards to equal widths.
 - Fixed HTB certification layout so it no longer overflows the site width.
+
+## v16.4
+
+- Replaced the text-based HTB badge with the official Hack The Box icon from Simple Icons.
+- Logo source: https://cdn.simpleicons.org/hackthebox/9FEF00
+- Applied on the homepage certification card and the dedicated Training & Certifications page.

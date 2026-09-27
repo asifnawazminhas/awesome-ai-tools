@@ -1149,3 +1149,25 @@ a{color:inherit}button,input{font:inherit}.wrap{width:min(1480px,calc(100% - 48p
     grid-column:1;
   }
 }
+
+
+/* v16.4 Hack The Box Simple Icons logo */
+.cert-promo-htb,
+.cert-provider-mark-htb{
+  background:#111821 !important;
+  border:1px solid rgba(159,239,0,.28);
+  display:grid;
+  place-items:center;
+}
+.cert-promo-htb img{
+  width:30px;
+  height:30px;
+  object-fit:contain;
+  display:block;
+}
+.cert-provider-mark-htb img{
+  width:38px;
+  height:38px;
+  object-fit:contain;
+  display:block;
+}
