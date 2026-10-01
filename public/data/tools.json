@@ -1,560 +1,5 @@
 [
   {
-    "name": "BugTraceAI",
-    "short": "BT",
-    "category": "Security AI",
-    "url": "https://github.com/BugTraceAI/BugTraceAI",
-    "desc": "Self-hosted multi-agent security platform for autonomous vulnerability discovery, validation and reporting.",
-    "tags": [
-      "Bug Bounty",
-      "Multi-agent",
-      "Self-hosted"
-    ],
-    "type": "Autonomous",
-    "openSource": true,
-    "localModel": true,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "Bug Bounty",
-    "lastVerified": "2026-09-26",
-    "logoText": "BT",
-    "website": "https://github.com/BugTraceAI/BugTraceAI",
-    "github": "https://github.com/BugTraceAI/BugTraceAI",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/BugTraceAI/BugTraceAI",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/bugtraceai.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Bug Bounty",
-      "Vulnerability Research",
-      "Security Automation"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "Claude-Red",
-    "short": "CR",
-    "category": "Security AI",
-    "url": "https://github.com/SnailSploit/claude-red",
-    "desc": "Open-source offensive security skills library for Claude, providing structured expert methodology across penetration testing, red teaming, AppSec, vulnerability research and related security domains.",
-    "tags": [
-      "Red Teaming",
-      "Pentesting",
-      "Claude Skills",
-      "Open Source"
-    ],
-    "type": "Security Skills Library",
-    "openSource": true,
-    "localModel": false,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Claude",
-      "Claude Code"
-    ],
-    "securitySubtype": "Offensive Security Skills",
-    "lastVerified": "2026-09-26",
-    "logoText": "CR",
-    "website": "https://github.com/SnailSploit/claude-red",
-    "github": "https://github.com/SnailSploit/claude-red",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Active",
-    "statusNote": "",
-    "source": "https://github.com/SnailSploit/claude-red",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/claude-red.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Penetration Testing",
-      "Red Teaming",
-      "Web Application Security",
-      "Active Directory",
-      "API Security",
-      "Cloud Security",
-      "Exploit Development",
-      "Vulnerability Research",
-      "Privilege Escalation",
-      "Post-Exploitation",
-      "AI Security"
-    ],
-    "securitySummary": "Built specifically to extend Claude with structured offensive-security methodology and skills."
-  },
-  {
-    "name": "DarkMoon",
-    "short": "DM",
-    "category": "Security AI",
-    "url": "https://github.com/ASCIT31/Dark-Moon",
-    "desc": "Open-source autonomous AI penetration testing platform covering web, API, cloud, Active Directory, Kubernetes and AI/LLM targets.",
-    "tags": [
-      "Pentesting",
-      "Autonomous",
-      "Local AI"
-    ],
-    "type": "Autonomous",
-    "openSource": true,
-    "localModel": true,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "Local Security AI",
-    "lastVerified": "2026-09-26",
-    "logoText": "DM",
-    "website": "https://github.com/ASCIT31/Dark-Moon",
-    "github": "https://github.com/ASCIT31/Dark-Moon",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/ASCIT31/Dark-Moon",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/darkmoon.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Pentesting",
-      "Red Teaming",
-      "Local / Private"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "hackingBuddyGPT",
-    "short": "HB",
-    "category": "Security AI",
-    "url": "https://github.com/ipa-lab/hackingBuddyGPT",
-    "desc": "Research framework for exploring LLM-assisted offensive security tasks and autonomous security workflows.",
-    "tags": [
-      "Research",
-      "Pentesting",
-      "LLM"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": false,
-    "featured": false,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "Research Frameworks",
-    "lastVerified": "2026-09-26",
-    "logoText": "HB",
-    "website": "https://github.com/ipa-lab/hackingBuddyGPT",
-    "github": "https://github.com/ipa-lab/hackingBuddyGPT",
-    "apiAvailable": false,
-    "added": "2026-09-01",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/ipa-lab/hackingBuddyGPT",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/hackingbuddygpt.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Security Research",
-      "Pentesting",
-      "LLM-assisted Testing"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "HexStrike AI",
-    "short": "HX",
-    "category": "Security AI",
-    "url": "https://github.com/dennislee928/Hexstrike-AI",
-    "desc": "AI-powered penetration testing and MCP framework that orchestrates a large security-tool ecosystem with autonomous agents.",
-    "tags": [
-      "Pentesting",
-      "MCP",
-      "Agents"
-    ],
-    "type": "Framework",
-    "openSource": true,
-    "localModel": false,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "MCP Security",
-    "lastVerified": "2026-09-26",
-    "logoText": "HX",
-    "website": "https://github.com/dennislee928/Hexstrike-AI",
-    "github": "https://github.com/dennislee928/Hexstrike-AI",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/dennislee928/Hexstrike-AI",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/hexstrike-ai.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Pentesting",
-      "MCP",
-      "Security Automation"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "Nebula",
-    "short": "NE",
-    "category": "Security AI",
-    "url": "https://github.com/berylliumsec/nebula",
-    "desc": "AI-powered penetration testing workbench for reconnaissance, notes, vulnerability analysis, evidence and reporting.",
-    "tags": [
-      "Pentesting",
-      "Assistant",
-      "Workflow"
-    ],
-    "type": "Assistant",
-    "openSource": true,
-    "localModel": false,
-    "featured": false,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "Pentesting Assistants",
-    "lastVerified": "2026-09-26",
-    "logoText": "NE",
-    "website": "https://github.com/berylliumsec/nebula",
-    "github": "https://github.com/berylliumsec/nebula",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/berylliumsec/nebula",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/nebula.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Pentesting",
-      "Security Workflow",
-      "Research"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "NVIDIA garak",
-    "short": "NG",
-    "category": "Security AI",
-    "url": "https://github.com/NVIDIA/garak",
-    "desc": "Open-source LLM vulnerability scanner from NVIDIA for probing generative AI models and applications for security weaknesses, unwanted behaviours and known failure modes.",
-    "tags": [
-      "LLM Security",
-      "AI Security Testing",
-      "Red Teaming",
-      "Open Source"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": true,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "LLM Security",
-    "lastVerified": "2026-09-26",
-    "logoText": "GK",
-    "website": "https://github.com/NVIDIA/garak",
-    "github": "https://github.com/NVIDIA/garak",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/NVIDIA/garak",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/garak.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "LLM Security",
-      "AI Security Testing",
-      "Red Teaming",
-      "Prompt Injection Testing",
-      "Model Evaluation",
-      "Vulnerability Scanning"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "PentAGI",
-    "short": "PA",
-    "category": "Security AI",
-    "url": "https://github.com/StoyKK/Pentagi",
-    "desc": "Autonomous multi-agent platform for complex penetration testing workflows and security automation.",
-    "tags": [
-      "Pentesting",
-      "Agents",
-      "Autonomous"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": false,
-    "featured": false,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "Pentesting Agents",
-    "lastVerified": "2026-09-26",
-    "logoText": "PA",
-    "website": "https://github.com/StoyKK/Pentagi",
-    "github": "https://github.com/StoyKK/Pentagi",
-    "apiAvailable": false,
-    "added": "2026-09-01",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/StoyKK/Pentagi",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/pentagi.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Pentesting",
-      "Red Teaming",
-      "Security Automation"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "PentestGPT",
-    "short": "PG",
-    "category": "Security AI",
-    "url": "https://github.com/artyang/PentestGPT",
-    "desc": "AI-assisted penetration testing framework designed to guide testing progress and specific security operations.",
-    "tags": [
-      "Pentesting",
-      "LLM",
-      "Research"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": false,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "Research Frameworks",
-    "lastVerified": "2026-09-26",
-    "logoText": "PG",
-    "website": "https://github.com/artyang/PentestGPT",
-    "github": "https://github.com/artyang/PentestGPT",
-    "apiAvailable": false,
-    "added": "2026-09-01",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/artyang/PentestGPT",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/pentestgpt.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Pentesting",
-      "Security Research",
-      "LLM-assisted Testing"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "PyRIT",
-    "short": "PY",
-    "category": "Security AI",
-    "url": "https://github.com/Azure/PyRIT",
-    "desc": "Open-source framework for identifying risks in generative AI systems through automated red teaming workflows.",
-    "tags": [
-      "LLM Security",
-      "Red Teaming",
-      "Open Source"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": true,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "Windows",
-      "CLI"
-    ],
-    "securitySubtype": "LLM Security",
-    "lastVerified": "2026-09-26",
-    "logoText": "PY",
-    "website": "https://github.com/Azure/PyRIT",
-    "github": "https://github.com/Azure/PyRIT",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/Azure/PyRIT",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/pyrit.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "AI Security",
-      "Red Teaming",
-      "LLM Security"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "Shannon",
-    "short": "SH",
-    "category": "Security AI",
-    "url": "https://github.com/KeygraphHQ/shannon",
-    "desc": "Autonomous AI pentester for web applications and APIs that combines source analysis with live validation of vulnerabilities.",
-    "tags": [
-      "AppSec",
-      "API",
-      "Autonomous"
-    ],
-    "type": "Autonomous",
-    "openSource": true,
-    "localModel": false,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "AppSec",
-    "lastVerified": "2026-09-26",
-    "logoText": "SH",
-    "website": "https://github.com/KeygraphHQ/shannon",
-    "github": "https://github.com/KeygraphHQ/shannon",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Experimental",
-    "statusNote": "",
-    "source": "https://github.com/KeygraphHQ/shannon",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/shannon.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "AppSec",
-      "API Security",
-      "Vulnerability Validation"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "Strix",
-    "short": "ST",
-    "category": "Security AI",
-    "url": "https://github.com/usestrix/strix",
-    "desc": "Open-source autonomous AI pentesting platform for discovering, validating and reporting application vulnerabilities.",
-    "tags": [
-      "Pentesting",
-      "Agents",
-      "AppSec"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": false,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Linux",
-      "CLI"
-    ],
-    "securitySubtype": "AppSec",
-    "lastVerified": "2026-09-26",
-    "logoText": "ST",
-    "website": "https://github.com/usestrix/strix",
-    "github": "https://github.com/usestrix/strix",
-    "apiAvailable": false,
-    "added": "2026-09-01",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Active",
-    "statusNote": "",
-    "source": "https://github.com/usestrix/strix",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/strix.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "AppSec",
-      "Pentesting",
-      "Vulnerability Validation"
-    ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
-  },
-  {
-    "name": "Tencent AI-Infra-Guard",
-    "short": "AIG",
-    "category": "Security AI",
-    "url": "https://github.com/Tencent/AI-Infra-Guard",
-    "desc": "Full-stack AI red teaming platform from Tencent Zhuque Lab for Agent, Skills, MCP, AI infrastructure and LLM security assessment.",
-    "tags": [
-      "AI Red Teaming",
-      "MCP Security",
-      "LLM Security",
-      "Open Source"
-    ],
-    "type": "AI Red Teaming Platform",
-    "openSource": true,
-    "localModel": true,
-    "featured": true,
-    "pricing": "Open Source",
-    "platforms": [
-      "Self-hosted",
-      "Web"
-    ],
-    "securitySubtype": "AI Red Teaming",
-    "lastVerified": "2026-09-26",
-    "logoText": "AIG",
-    "website": "https://github.com/Tencent/AI-Infra-Guard",
-    "github": "https://github.com/Tencent/AI-Infra-Guard",
-    "apiAvailable": false,
-    "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
-    "status": "Active",
-    "statusNote": "",
-    "source": "https://github.com/Tencent/AI-Infra-Guard",
-    "lastUpdated": "2026-09-26",
-    "localLogo": "/assets/img/logos/tencent-ai-infra-guard.png",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "AI Red Teaming",
-      "Agent Security",
-      "MCP Security",
-      "Prompt Injection Testing",
-      "Jailbreak Evaluation",
-      "LLM Security",
-      "AI Infrastructure Scanning",
-      "Agent Skills Scanning",
-      "Vulnerability Scanning",
-      "Model Evaluation"
-    ],
-    "securitySummary": "Built specifically for full-stack AI security assessment and red teaming."
-  },
-  {
     "name": "Aider",
     "short": "AI",
     "category": "Coding Assistants",
@@ -596,6 +41,47 @@
       "Code Review"
     ],
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+  },
+  {
+    "name": "BugTraceAI",
+    "short": "BT",
+    "category": "Security AI",
+    "url": "https://github.com/BugTraceAI/BugTraceAI",
+    "desc": "Self-hosted multi-agent security platform for autonomous vulnerability discovery, validation and reporting.",
+    "tags": [
+      "Bug Bounty",
+      "Multi-agent",
+      "Self-hosted"
+    ],
+    "type": "Autonomous",
+    "openSource": true,
+    "localModel": true,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "Bug Bounty",
+    "lastVerified": "2026-09-26",
+    "logoText": "BT",
+    "website": "https://github.com/BugTraceAI/BugTraceAI",
+    "github": "https://github.com/BugTraceAI/BugTraceAI",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/BugTraceAI/BugTraceAI",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/bugtraceai.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Bug Bounty",
+      "Vulnerability Research",
+      "Security Automation"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
   },
   {
     "name": "ChatGPT",
@@ -682,6 +168,56 @@
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
   },
   {
+    "name": "Claude-Red",
+    "short": "CR",
+    "category": "Security AI",
+    "url": "https://github.com/SnailSploit/claude-red",
+    "desc": "Open-source offensive security skills library for Claude, providing structured expert methodology across penetration testing, red teaming, AppSec, vulnerability research and related security domains.",
+    "tags": [
+      "Red Teaming",
+      "Pentesting",
+      "Claude Skills",
+      "Open Source"
+    ],
+    "type": "Security Skills Library",
+    "openSource": true,
+    "localModel": false,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Claude",
+      "Claude Code"
+    ],
+    "securitySubtype": "Offensive Security Skills",
+    "lastVerified": "2026-09-26",
+    "logoText": "CR",
+    "website": "https://github.com/SnailSploit/claude-red",
+    "github": "https://github.com/SnailSploit/claude-red",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/SnailSploit/claude-red",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/claude-red.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Penetration Testing",
+      "Red Teaming",
+      "Web Application Security",
+      "Active Directory",
+      "API Security",
+      "Cloud Security",
+      "Exploit Development",
+      "Vulnerability Research",
+      "Privilege Escalation",
+      "Post-Exploitation",
+      "AI Security"
+    ],
+    "securitySummary": "Built specifically to extend Claude with structured offensive-security methodology and skills."
+  },
+  {
     "name": "Cursor",
     "short": "CU",
     "category": "Coding Assistants",
@@ -722,6 +258,47 @@
       "Codebase Review"
     ],
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+  },
+  {
+    "name": "DarkMoon",
+    "short": "DM",
+    "category": "Security AI",
+    "url": "https://github.com/ASCIT31/Dark-Moon",
+    "desc": "Open-source autonomous AI penetration testing platform covering web, API, cloud, Active Directory, Kubernetes and AI/LLM targets.",
+    "tags": [
+      "Pentesting",
+      "Autonomous",
+      "Local AI"
+    ],
+    "type": "Autonomous",
+    "openSource": true,
+    "localModel": true,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "Local Security AI",
+    "lastVerified": "2026-09-26",
+    "logoText": "DM",
+    "website": "https://github.com/ASCIT31/Dark-Moon",
+    "github": "https://github.com/ASCIT31/Dark-Moon",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/ASCIT31/Dark-Moon",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/darkmoon.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Pentesting",
+      "Red Teaming",
+      "Local / Private"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
   },
   {
     "name": "DeepSeek",
@@ -924,6 +501,88 @@
       "Source Discovery"
     ],
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+  },
+  {
+    "name": "hackingBuddyGPT",
+    "short": "HB",
+    "category": "Security AI",
+    "url": "https://github.com/ipa-lab/hackingBuddyGPT",
+    "desc": "Research framework for exploring LLM-assisted offensive security tasks and autonomous security workflows.",
+    "tags": [
+      "Research",
+      "Pentesting",
+      "LLM"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": false,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "Research Frameworks",
+    "lastVerified": "2026-09-26",
+    "logoText": "HB",
+    "website": "https://github.com/ipa-lab/hackingBuddyGPT",
+    "github": "https://github.com/ipa-lab/hackingBuddyGPT",
+    "apiAvailable": false,
+    "added": "2026-09-01",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/ipa-lab/hackingBuddyGPT",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/hackingbuddygpt.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Security Research",
+      "Pentesting",
+      "LLM-assisted Testing"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+  },
+  {
+    "name": "HexStrike AI",
+    "short": "HX",
+    "category": "Security AI",
+    "url": "https://github.com/dennislee928/Hexstrike-AI",
+    "desc": "AI-powered penetration testing and MCP framework that orchestrates a large security-tool ecosystem with autonomous agents.",
+    "tags": [
+      "Pentesting",
+      "MCP",
+      "Agents"
+    ],
+    "type": "Framework",
+    "openSource": true,
+    "localModel": false,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "MCP Security",
+    "lastVerified": "2026-09-26",
+    "logoText": "HX",
+    "website": "https://github.com/dennislee928/Hexstrike-AI",
+    "github": "https://github.com/dennislee928/Hexstrike-AI",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/dennislee928/Hexstrike-AI",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/hexstrike-ai.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Pentesting",
+      "MCP",
+      "Security Automation"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
   },
   {
     "name": "Hugging Face",
@@ -1173,6 +832,47 @@
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
   },
   {
+    "name": "Nebula",
+    "short": "NE",
+    "category": "Security AI",
+    "url": "https://github.com/berylliumsec/nebula",
+    "desc": "AI-powered penetration testing workbench for reconnaissance, notes, vulnerability analysis, evidence and reporting.",
+    "tags": [
+      "Pentesting",
+      "Assistant",
+      "Workflow"
+    ],
+    "type": "Assistant",
+    "openSource": true,
+    "localModel": false,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "Pentesting Assistants",
+    "lastVerified": "2026-09-26",
+    "logoText": "NE",
+    "website": "https://github.com/berylliumsec/nebula",
+    "github": "https://github.com/berylliumsec/nebula",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/berylliumsec/nebula",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/nebula.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Pentesting",
+      "Security Workflow",
+      "Research"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+  },
+  {
     "name": "NotebookLM",
     "short": "NL",
     "category": "Research & Analysis",
@@ -1211,6 +911,51 @@
       "Knowledge Synthesis"
     ],
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+  },
+  {
+    "name": "NVIDIA garak",
+    "short": "NG",
+    "category": "Security AI",
+    "url": "https://github.com/NVIDIA/garak",
+    "desc": "Open-source LLM vulnerability scanner from NVIDIA for probing generative AI models and applications for security weaknesses, unwanted behaviours and known failure modes.",
+    "tags": [
+      "LLM Security",
+      "AI Security Testing",
+      "Red Teaming",
+      "Open Source"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "LLM Security",
+    "lastVerified": "2026-09-26",
+    "logoText": "GK",
+    "website": "https://github.com/NVIDIA/garak",
+    "github": "https://github.com/NVIDIA/garak",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/NVIDIA/garak",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/garak.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "LLM Security",
+      "AI Security Testing",
+      "Red Teaming",
+      "Prompt Injection Testing",
+      "Model Evaluation",
+      "Vulnerability Scanning"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
   },
   {
     "name": "Ollama",
@@ -1295,6 +1040,88 @@
       "AI Security Research"
     ],
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+  },
+  {
+    "name": "PentAGI",
+    "short": "PA",
+    "category": "Security AI",
+    "url": "https://github.com/StoyKK/Pentagi",
+    "desc": "Autonomous multi-agent platform for complex penetration testing workflows and security automation.",
+    "tags": [
+      "Pentesting",
+      "Agents",
+      "Autonomous"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": false,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "Pentesting Agents",
+    "lastVerified": "2026-09-26",
+    "logoText": "PA",
+    "website": "https://github.com/StoyKK/Pentagi",
+    "github": "https://github.com/StoyKK/Pentagi",
+    "apiAvailable": false,
+    "added": "2026-09-01",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/StoyKK/Pentagi",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/pentagi.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Pentesting",
+      "Red Teaming",
+      "Security Automation"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+  },
+  {
+    "name": "PentestGPT",
+    "short": "PG",
+    "category": "Security AI",
+    "url": "https://github.com/artyang/PentestGPT",
+    "desc": "AI-assisted penetration testing framework designed to guide testing progress and specific security operations.",
+    "tags": [
+      "Pentesting",
+      "LLM",
+      "Research"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": false,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "Research Frameworks",
+    "lastVerified": "2026-09-26",
+    "logoText": "PG",
+    "website": "https://github.com/artyang/PentestGPT",
+    "github": "https://github.com/artyang/PentestGPT",
+    "apiAvailable": false,
+    "added": "2026-09-01",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/artyang/PentestGPT",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/pentestgpt.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Pentesting",
+      "Security Research",
+      "LLM-assisted Testing"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
   },
   {
     "name": "Perplexity",
@@ -1418,6 +1245,48 @@
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
   },
   {
+    "name": "PyRIT",
+    "short": "PY",
+    "category": "Security AI",
+    "url": "https://github.com/Azure/PyRIT",
+    "desc": "Open-source framework for identifying risks in generative AI systems through automated red teaming workflows.",
+    "tags": [
+      "LLM Security",
+      "Red Teaming",
+      "Open Source"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "CLI"
+    ],
+    "securitySubtype": "LLM Security",
+    "lastVerified": "2026-09-26",
+    "logoText": "PY",
+    "website": "https://github.com/Azure/PyRIT",
+    "github": "https://github.com/Azure/PyRIT",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/Azure/PyRIT",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/pyrit.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "AI Security",
+      "Red Teaming",
+      "LLM Security"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+  },
+  {
     "name": "Replit",
     "short": "RP",
     "category": "Coding Assistants",
@@ -1459,6 +1328,47 @@
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
   },
   {
+    "name": "Shannon",
+    "short": "SH",
+    "category": "Security AI",
+    "url": "https://github.com/KeygraphHQ/shannon",
+    "desc": "Autonomous AI pentester for web applications and APIs that combines source analysis with live validation of vulnerabilities.",
+    "tags": [
+      "AppSec",
+      "API",
+      "Autonomous"
+    ],
+    "type": "Autonomous",
+    "openSource": true,
+    "localModel": false,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "AppSec",
+    "lastVerified": "2026-09-26",
+    "logoText": "SH",
+    "website": "https://github.com/KeygraphHQ/shannon",
+    "github": "https://github.com/KeygraphHQ/shannon",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "",
+    "source": "https://github.com/KeygraphHQ/shannon",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/shannon.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "AppSec",
+      "API Security",
+      "Vulnerability Validation"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+  },
+  {
     "name": "Sourcegraph Cody",
     "short": "SC",
     "category": "Coding Assistants",
@@ -1498,5 +1408,139 @@
       "Developer Research"
     ],
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+  },
+  {
+    "name": "Strix",
+    "short": "ST",
+    "category": "Security AI",
+    "url": "https://github.com/usestrix/strix",
+    "desc": "Open-source autonomous AI pentesting platform for discovering, validating and reporting application vulnerabilities.",
+    "tags": [
+      "Pentesting",
+      "Agents",
+      "AppSec"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": false,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "CLI"
+    ],
+    "securitySubtype": "AppSec",
+    "lastVerified": "2026-09-26",
+    "logoText": "ST",
+    "website": "https://github.com/usestrix/strix",
+    "github": "https://github.com/usestrix/strix",
+    "apiAvailable": false,
+    "added": "2026-09-01",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/usestrix/strix",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/strix.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "AppSec",
+      "Pentesting",
+      "Vulnerability Validation"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+  },
+  {
+    "name": "Tencent AI-Infra-Guard",
+    "short": "AIG",
+    "category": "Security AI",
+    "url": "https://github.com/Tencent/AI-Infra-Guard",
+    "desc": "Full-stack AI red teaming platform from Tencent Zhuque Lab for Agent, Skills, MCP, AI infrastructure and LLM security assessment.",
+    "tags": [
+      "AI Red Teaming",
+      "MCP Security",
+      "LLM Security",
+      "Open Source"
+    ],
+    "type": "AI Red Teaming Platform",
+    "openSource": true,
+    "localModel": true,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Self-hosted",
+      "Web"
+    ],
+    "securitySubtype": "AI Red Teaming",
+    "lastVerified": "2026-09-26",
+    "logoText": "AIG",
+    "website": "https://github.com/Tencent/AI-Infra-Guard",
+    "github": "https://github.com/Tencent/AI-Infra-Guard",
+    "apiAvailable": false,
+    "added": "2026-09-26",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/Tencent/AI-Infra-Guard",
+    "lastUpdated": "2026-09-26",
+    "localLogo": "/assets/img/logos/tencent-ai-infra-guard.png",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "AI Red Teaming",
+      "Agent Security",
+      "MCP Security",
+      "Prompt Injection Testing",
+      "Jailbreak Evaluation",
+      "LLM Security",
+      "AI Infrastructure Scanning",
+      "Agent Skills Scanning",
+      "Vulnerability Scanning",
+      "Model Evaluation"
+    ],
+    "securitySummary": "Built specifically for full-stack AI security assessment and red teaming."
+  },
+  {
+    "name": "Xalgorix",
+    "short": "XA",
+    "category": "Security AI",
+    "url": "https://github.com/xalgorix/xalgorix",
+    "desc": "Open-source autonomous AI penetration testing platform with exploit-verified findings, self-hosted operation and bring-your-own-LLM support.",
+    "tags": [
+      "Pentesting",
+      "Autonomous",
+      "Exploit Verification"
+    ],
+    "type": "Autonomous",
+    "openSource": true,
+    "localModel": true,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Self-hosted",
+      "Web",
+      "API"
+    ],
+    "securitySubtype": "Autonomous Pentesting",
+    "lastVerified": "2026-10-01",
+    "logoText": "XA",
+    "website": "https://github.com/xalgorix/xalgorix",
+    "github": "https://github.com/xalgorix/xalgorix",
+    "apiAvailable": true,
+    "added": "2026-10-01",
+    "logo": "https://www.google.com/s2/favicons?domain=xalgorix.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/xalgorix/xalgorix",
+    "lastUpdated": "2026-10-01",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Pentesting",
+      "Autonomous Pentesting",
+      "Vulnerability Validation"
+    ],
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
   }
 ]
