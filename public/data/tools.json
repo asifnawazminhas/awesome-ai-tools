@@ -1,5 +1,48 @@
 [
   {
+    "name": "Agent Smith",
+    "short": "AS",
+    "category": "Security AI",
+    "url": "https://github.com/0x0pointer/agent-smith",
+    "desc": "Open-source AI pentesting framework for autonomous and augmented security testing with 50+ tools, AI red teaming, exploit validation and evidence-backed findings.",
+    "tags": [
+      "Pentesting",
+      "Autonomous",
+      "AI Red Teaming"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "Docker",
+      "CLI",
+      "Web"
+    ],
+    "securitySubtype": "Autonomous Pentesting",
+    "lastVerified": "2026-10-02",
+    "logoText": "AS",
+    "website": "https://github.com/0x0pointer/agent-smith",
+    "github": "https://github.com/0x0pointer/agent-smith",
+    "apiAvailable": true,
+    "added": "2026-10-02",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/0x0pointer/agent-smith",
+    "lastUpdated": "2026-10-02",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Pentesting",
+      "AI Red Teaming",
+      "Exploit Validation"
+    ],
+    "securitySummary": "Built specifically for cybersecurity and AI security workflows."
+  },
+  {
     "name": "Aider",
     "short": "AI",
     "category": "Coding Assistants",
@@ -1167,7 +1210,7 @@
     "name": "Phind",
     "short": "PH",
     "category": "AI Assistants",
-    "url": "https://www.phind.com/",
+    "url": "https://phindai.org/",
     "desc": "AI search and answer engine focused on technical questions, developers and problem solving.",
     "tags": [
       "Assistant",
@@ -1183,17 +1226,17 @@
       "Web"
     ],
     "securitySubtype": null,
-    "lastVerified": "2026-09-26",
+    "lastVerified": "2026-10-02",
     "logoText": "PH",
-    "website": "https://www.phind.com/",
+    "website": "https://phindai.org/",
     "github": null,
     "apiAvailable": false,
     "added": "2026-09-26",
-    "logo": "https://www.google.com/s2/favicons?domain=phind.com&sz=64",
+    "logo": "https://www.google.com/s2/favicons?domain=phindai.org&sz=64",
     "status": "Active",
     "statusNote": "",
-    "source": "https://www.phind.com/",
-    "lastUpdated": "2026-09-26",
+    "source": "https://phindai.org/",
+    "lastUpdated": "2026-10-02",
     "localLogo": "/assets/img/logos/phind.png",
     "securityRelevance": "General AI for Security",
     "securityCapabilities": [
