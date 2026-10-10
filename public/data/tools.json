@@ -40,7 +40,8 @@
       "AI Red Teaming",
       "Exploit Validation"
     ],
-    "securitySummary": "Built specifically for cybersecurity and AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity and AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Aider",
@@ -83,7 +84,8 @@
       "Scripting",
       "Code Review"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "BugTraceAI",
@@ -124,7 +126,8 @@
       "Vulnerability Research",
       "Security Automation"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "ChatGPT",
@@ -166,7 +169,8 @@
       "Report Writing",
       "Learning"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Claude",
@@ -208,7 +212,8 @@
       "Report Writing",
       "Learning"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Claude-Red",
@@ -258,7 +263,8 @@
       "Post-Exploitation",
       "AI Security"
     ],
-    "securitySummary": "Built specifically to extend Claude with structured offensive-security methodology and skills."
+    "securitySummary": "Built specifically to extend Claude with structured offensive-security methodology and skills.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Cursor",
@@ -300,7 +306,8 @@
       "Scripting",
       "Codebase Review"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "DarkMoon",
@@ -341,7 +348,8 @@
       "Red Teaming",
       "Local / Private"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "DeepSeek",
@@ -381,7 +389,8 @@
       "Scripting",
       "Security Research"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Devin",
@@ -421,7 +430,8 @@
       "Automation",
       "Developer Workflow"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Gemini",
@@ -462,7 +472,8 @@
       "Scripting",
       "Documentation"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "GitHub Copilot",
@@ -503,7 +514,8 @@
       "Code Review",
       "Developer Workflow"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Grok",
@@ -543,7 +555,8 @@
       "Threat Research",
       "Source Discovery"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "hackingBuddyGPT",
@@ -584,7 +597,8 @@
       "Pentesting",
       "LLM-assisted Testing"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "HexStrike AI",
@@ -625,7 +639,8 @@
       "MCP",
       "Security Automation"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Hugging Face",
@@ -666,7 +681,8 @@
       "Model Research",
       "Datasets"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Jan",
@@ -709,7 +725,8 @@
       "Security Research",
       "Model Experimentation"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Le Chat",
@@ -749,7 +766,8 @@
       "Analysis",
       "Report Writing"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "LM Studio",
@@ -791,7 +809,8 @@
       "Security Research",
       "Model Experimentation"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Microsoft Copilot",
@@ -831,7 +850,8 @@
       "Productivity",
       "Security Research"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Mistral AI",
@@ -872,7 +892,8 @@
       "API",
       "Local / Private"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Nebula",
@@ -913,7 +934,8 @@
       "Security Workflow",
       "Research"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "NotebookLM",
@@ -953,7 +975,8 @@
       "Documentation",
       "Knowledge Synthesis"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "NVIDIA garak",
@@ -998,7 +1021,8 @@
       "Model Evaluation",
       "Vulnerability Scanning"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Ollama",
@@ -1041,7 +1065,8 @@
       "Security Research",
       "Model Experimentation"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "OpenRouter",
@@ -1082,7 +1107,8 @@
       "API",
       "AI Security Research"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Orkas",
@@ -1125,7 +1151,8 @@
       "Coding",
       "Data Analysis"
     ],
-    "securitySummary": "General-purpose local-first AI agent workspace with potential use in research and security-related workflows."
+    "securitySummary": "General-purpose local-first AI agent workspace with potential use in research and security-related workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "PentAGI",
@@ -1166,7 +1193,8 @@
       "Red Teaming",
       "Security Automation"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Pentest Swarm AI",
@@ -1210,7 +1238,8 @@
       "API Security",
       "Exploit Validation"
     ],
-    "securitySummary": "Security-native swarm architecture with coordinated agents and evidence-backed testing workflows."
+    "securitySummary": "Security-native swarm architecture with coordinated agents and evidence-backed testing workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "PentestGPT",
@@ -1251,7 +1280,8 @@
       "Security Research",
       "LLM-assisted Testing"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Perplexity",
@@ -1291,7 +1321,8 @@
       "Threat Research",
       "Source Discovery"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Phind",
@@ -1331,7 +1362,8 @@
       "Scripting",
       "Developer Research"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Poe",
@@ -1372,7 +1404,8 @@
       "Security Research",
       "Learning"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "PyRIT",
@@ -1414,7 +1447,8 @@
       "Red Teaming",
       "LLM Security"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Replit",
@@ -1455,7 +1489,8 @@
       "Prototyping",
       "Developer Workflow"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Shannon",
@@ -1496,7 +1531,8 @@
       "API Security",
       "Vulnerability Validation"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Sourcegraph Cody",
@@ -1537,7 +1573,8 @@
       "Code Review",
       "Developer Research"
     ],
-    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
+    "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
+    "aiClassification": "General-Purpose AI"
   },
   {
     "name": "Strix",
@@ -1578,7 +1615,8 @@
       "Pentesting",
       "Vulnerability Validation"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Tencent AI-Infra-Guard",
@@ -1627,7 +1665,8 @@
       "Vulnerability Scanning",
       "Model Evaluation"
     ],
-    "securitySummary": "Built specifically for full-stack AI security assessment and red teaming."
+    "securitySummary": "Built specifically for full-stack AI security assessment and red teaming.",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Xalgorix",
@@ -1671,6 +1710,7 @@
       "Autonomous Pentesting",
       "Vulnerability Validation"
     ],
-    "securitySummary": "Built specifically for cybersecurity or AI security workflows."
+    "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
+    "aiClassification": "Security-Native AI"
   }
 ]
