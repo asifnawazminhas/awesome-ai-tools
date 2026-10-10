@@ -1085,6 +1085,49 @@
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows."
   },
   {
+    "name": "Orkas",
+    "short": "OR",
+    "category": "AI Assistants",
+    "url": "https://orkas.ai/",
+    "desc": "Open-source, local-first desktop AI workforce that coordinates specialist agents for research, coding, data analysis, documents and media tasks. Local app; model calls and optional services may cost extra.",
+    "tags": [
+      "Multi-Agent",
+      "Desktop",
+      "Local First"
+    ],
+    "type": "Assistant",
+    "openSource": true,
+    "localModel": true,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Desktop"
+    ],
+    "securitySubtype": null,
+    "lastVerified": "2026-10-10",
+    "logoText": "OR",
+    "website": "https://orkas.ai/",
+    "github": "https://github.com/Orkas-AI/Orkas",
+    "apiAvailable": false,
+    "added": "2026-10-10",
+    "logo": "https://www.google.com/s2/favicons?domain=orkas.ai&sz=64",
+    "status": "Active",
+    "statusNote": "Local desktop application; external model providers and optional services may charge fees.",
+    "source": "https://github.com/Orkas-AI/Orkas",
+    "lastUpdated": "2026-10-10",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "General AI for Security",
+    "securityCapabilities": [
+      "Research",
+      "Coding",
+      "Data Analysis"
+    ],
+    "securitySummary": "General-purpose local-first AI agent workspace with potential use in research and security-related workflows."
+  },
+  {
     "name": "PentAGI",
     "short": "PA",
     "category": "Security AI",

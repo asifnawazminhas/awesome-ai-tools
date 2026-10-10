@@ -169,3 +169,8 @@ https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai
 - Added Pentest Swarm AI to the Security AI directory as an experimental (alpha) open-source agent swarm for autonomous web application and API penetration testing.
 - Added its standalone tool page, changelog entry and sitemap URL.
 - Source: https://github.com/Armur-Ai/Pentest-Swarm-AI
+
+### 2026-10-10 - Community submission: Orkas
+
+- Added Orkas to AI Assistants (https://ai.asifnawazminhas.com/tools/orkas/).
+- Thank you, [@BlueSkyJD666](https://github.com/BlueSkyJD666), for contributing via [issue #1](https://github.com/asifnawazminhas/awesome-ai-tools/issues/1) and helping expand the directory.
