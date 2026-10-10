@@ -54,6 +54,7 @@
     const name = document.getElementById('submitName').value.trim();
     const website = document.getElementById('submitWebsite').value.trim();
     const category = document.getElementById('submitCategory').value;
+    const classification = document.getElementById('submitClassification').value;
     const pricing = document.getElementById('submitPricing').value;
     const github = document.getElementById('submitGithub').value.trim();
     const source = document.getElementById('submitSource').value.trim();
@@ -68,6 +69,7 @@
       '',
       `**Tool name:** ${name}`,
       `**Official website:** ${website}`,
+      `**Classification:** ${classification}`,
       `**Category:** ${category}`,
       `**Pricing:** ${pricing}`,
       `**GitHub / repository:** ${github || 'N/A'}`,

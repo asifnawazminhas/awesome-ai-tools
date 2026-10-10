@@ -178,7 +178,7 @@ https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai
 
 ## AI classifications
 
-All 40 tools have an `aiClassification` value in `public/data/tools.json`:
+All 41 tools have an `aiClassification` value in `public/data/tools.json`:
 
 - `Security-Native AI` (16): purpose-built for security testing, cyber defence or security research.
 - `General-Purpose AI` (24): general AI assistants and platforms applicable to security professionals.

@@ -1712,5 +1712,49 @@
     ],
     "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
     "aiClassification": "Security-Native AI"
+  },
+  {
+    "name": "Promptfoo",
+    "short": "PF",
+    "category": "Security AI",
+    "url": "https://www.promptfoo.dev/",
+    "desc": "Open-source framework and CLI for evaluating and red teaming LLM applications, testing prompt injection and other AI security risks, and automating evaluations in CI/CD.",
+    "tags": [
+      "LLM Security",
+      "AI Red Teaming",
+      "LLM Evaluations"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "CLI",
+      "Node.js",
+      "Local",
+      "CI/CD"
+    ],
+    "securitySubtype": "LLM Red Teaming",
+    "lastVerified": "2026-10-10",
+    "logoText": "PF",
+    "website": "https://www.promptfoo.dev/",
+    "github": "https://github.com/promptfoo/promptfoo",
+    "apiAvailable": true,
+    "added": "2026-10-10",
+    "logo": "https://www.google.com/s2/favicons?domain=promptfoo.dev&sz=64",
+    "status": "Active",
+    "statusNote": "Some model providers or hosted services may have separate costs.",
+    "source": "https://github.com/promptfoo/promptfoo",
+    "lastUpdated": "2026-10-10",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "LLM Red Teaming",
+      "Prompt Injection Testing",
+      "LLM Security Evaluation"
+    ],
+    "securitySummary": "Purpose-built capabilities for security testing of LLM applications and AI workflows.",
+    "aiClassification": "Security-Native AI"
   }
 ]
