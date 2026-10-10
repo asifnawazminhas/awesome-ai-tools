@@ -163,3 +163,9 @@ https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai
 - Replaced the text-based HTB badge with the official Hack The Box icon from Simple Icons.
 - Logo source: https://cdn.simpleicons.org/hackthebox/9FEF00
 - Applied on the homepage certification card and the dedicated Training & Certifications page.
+
+## 2026-10-10
+
+- Added Pentest Swarm AI to the Security AI directory as an experimental (alpha) open-source agent swarm for autonomous web application and API penetration testing.
+- Added its standalone tool page, changelog entry and sitemap URL.
+- Source: https://github.com/Armur-Ai/Pentest-Swarm-AI

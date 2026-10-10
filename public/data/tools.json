@@ -1126,6 +1126,50 @@
     "securitySummary": "Built specifically for cybersecurity or AI security workflows."
   },
   {
+    "name": "Pentest Swarm AI",
+    "short": "PS",
+    "category": "Security AI",
+    "url": "https://github.com/Armur-Ai/Pentest-Swarm-AI",
+    "desc": "Open-source, self-hosted swarm of AI agents for autonomous web application and API penetration testing, attack-chain exploration, vulnerability validation and evidence-backed reporting.",
+    "tags": [
+      "Agent Swarm",
+      "Web & API Security",
+      "Vulnerability Validation"
+    ],
+    "type": "Autonomous",
+    "openSource": true,
+    "localModel": true,
+    "featured": true,
+    "pricing": "Open Source",
+    "platforms": [
+      "Linux",
+      "macOS",
+      "Docker",
+      "CLI",
+      "Web"
+    ],
+    "securitySubtype": "Autonomous Pentesting",
+    "lastVerified": "2026-10-10",
+    "logoText": "PS",
+    "website": "https://armur-ai.github.io/Pentest-Swarm-AI/",
+    "github": "https://github.com/Armur-Ai/Pentest-Swarm-AI",
+    "apiAvailable": false,
+    "added": "2026-10-10",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Experimental",
+    "statusNote": "Alpha release (as labelled by the project)",
+    "source": "https://github.com/Armur-Ai/Pentest-Swarm-AI",
+    "lastUpdated": "2026-10-10",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Autonomous Pentesting",
+      "API Security",
+      "Exploit Validation"
+    ],
+    "securitySummary": "Security-native swarm architecture with coordinated agents and evidence-backed testing workflows."
+  },
+  {
     "name": "PentestGPT",
     "short": "PG",
     "category": "Security AI",
