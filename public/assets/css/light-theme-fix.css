@@ -33,3 +33,18 @@
 [data-theme="light"] .nav-links a,[data-theme="light"] .footer-rich nav a {color:#475569}
 [data-theme="light"] .nav-links a:hover {color:#17356d}
 [data-theme="light"] :focus-visible {outline-color:#3159d6}
+
+/* v2.4.1: restore contrast for capability chips on security tool cards. */
+[data-theme="light"] .security-cap-tags span,
+[data-theme="light"] .security-capability-nav span {
+  background:#e8eeff!important;
+  color:#243b70!important;
+  border:1px solid #b8c9f5!important;
+  font-weight:700;
+}
+[data-theme="light"] .security-cap-tags span:hover {
+  background:#d6e2ff!important;
+}
+[data-theme="light"] .security-focus-badge {color:#4053b4!important}
+[data-theme="light"] .security-focus-actions a {color:#17356d!important;background:#f1f5ff!important;border-color:#b9c8e5!important}
+[data-theme="light"] .security-focus-actions a:hover {background:#e1eaff!important}
