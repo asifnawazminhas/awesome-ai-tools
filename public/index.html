@@ -24,7 +24,7 @@
 <link as="style" href="/assets/css/style.css?v=17.0" rel="preload"/>
 <link href="/assets/css/style.css?v=17.0" rel="stylesheet"/>
 <link href="/assets/css/v2-refresh.css" rel="stylesheet"/>
-<link href="/assets/css/v2-sitewide.css?v=2.1" rel="stylesheet"/></head>
+<link href="/assets/css/v2-sitewide.css?v=2.2" rel="stylesheet"/></head>
 <body>
 <header class="site-header">
 <div class="wrap nav">
@@ -32,7 +32,7 @@
 <span class="brand-mark brand-mark-logo"><img alt="Awesome AI Tools logo" src="/assets/img/ai-mark.svg"/></span>
 <span class="brand-copy"><strong>AI Tools</strong><small>asifnawazminhas.com</small></span>
 </a>
-<nav aria-label="Primary navigation" class="nav-links"><a href="/">Home</a><a href="#tools">Directory</a><a href="/certifications/">Training &amp; Certifications</a><a href="#recent">Recently Added</a><a href="/submit/">Submit a Tool</a><a href="/about/">About</a></nav>
+<nav aria-label="Primary navigation" class="nav-links"><a href="/">Home</a><a href="#tools">Directory</a><a href="/certifications/">Training &amp; Certifications</a><a href="#tools" id="navRecentlyAdded">Recently Added</a><a href="/submit/">Submit a Tool</a><a href="/about/">About</a></nav>
 <div class="share-menu-wrap">
 <button aria-controls="shareMenu" aria-expanded="false" aria-haspopup="true" class="header-share" id="shareSite" type="button">
 <span aria-hidden="true" class="share-icon">↗</span><span>Share</span>
@@ -115,7 +115,7 @@
 </div>
 </div>
 </section>
-<section class="spotlight popular-section" id="popular"><div class="wrap"><section class="spotlight-panel"><div class="section-head compact"><div><div class="eyebrow">Popular</div><h2>Most opened tools</h2></div></div><div class="spotlight-strip" id="popularStrip"></div></section>
+<section class="spotlight popular-section" id="popular"><div class="wrap"><section class="spotlight-panel"><div class="section-head compact"><div><div class="eyebrow" id="popularEyebrow">Recommended</div><h2 id="popularHeading">Recommended tools</h2></div><button class="text-button" id="viewPopular" type="button">View all</button></div><div class="spotlight-strip" id="popularStrip"></div></section></div></section>
 <section class="browse-categories-home" id="browse-categories">
 <div class="wrap">
 <div class="section-head">
@@ -202,10 +202,10 @@
 <div class="sort-wrap">
 <label for="sortSelect">Sort</label>
 <select id="sortSelect">
+<option value="az" selected>A-Z</option>
 <option value="featured">Featured</option>
-<option value="az">A-Z</option>
 <option value="category">Category</option>
-<option value="recent">Recently verified</option>
+<option value="recent">Recently Added</option>
 </select>
 </div>
 </div>
@@ -214,7 +214,7 @@
 <div class="filter-label">Security AI focus</div>
 <div class="filters" id="securityFilterButtons"></div>
 </div>
-<div class="results-row"><span id="resultCount">0 tools</span><button class="text-button" id="resetFilters" type="button">Reset filters</button></div>
+<div class="directory-view-banner" id="directoryViewBanner" hidden><div><strong id="directoryViewTitle"></strong><p id="directoryViewDescription"></p></div><button type="button" class="secondary-action" id="directoryViewReset">View all tools</button></div><div class="results-row"><span id="resultCount">0 tools</span><button class="text-button" id="resetFilters" type="button">Reset filters</button></div>
 <div class="action-bar">
 <button class="secondary-action" id="favoritesOnly" type="button">Favorites</button>
 <button class="secondary-action" id="compareToggle" type="button">Compare <span id="compareCount">0</span></button>
@@ -291,7 +291,7 @@
 window.AWESOME_AI_ANALYTICS={enabled:false,endpoint:""};
 </script>
 <script defer="" src="/assets/js/analytics.js"></script>
-<script src="/assets/js/app.js?v=17.0"></script>
+<script src="/assets/js/app.js?v=23.0"></script>
 <script defer="" src="/assets/js/site-controls.js?v=17.0"></script>
 <div aria-label="Page scroll controls" class="page-scroll-controls">
 <button aria-label="Scroll to top" class="page-scroll-btn" id="scrollTopBtn" title="Scroll to top" type="button">↑</button>

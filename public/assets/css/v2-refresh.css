@@ -4,3 +4,15 @@
 @media(max-width:760px){.hero-v2{padding:28px 0 10px}.hero-v2 h1{font-size:clamp(37px,9vw,53px)}.hero-v2 .hero-copy{font-size:14px}.v2-hero-visual{display:none}.v2-classification-grid{grid-template-columns:1fr}.v2-classification-card{min-height:0;padding:18px}.tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.v2-stats span{font-size:9px}.v2-stats b{font-size:21px}}
 @media(max-width:520px){.tool-grid{grid-template-columns:1fr!important}.v2-stats{gap:6px}.v2-stats>div{padding:12px 8px}.v2-class-body strong{font-size:16px}.v2-class-body small{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.v2-hero-shortcuts a,.v2-classification-card{transition:none}}
+
+/* v2.2: gentle orbital movement; preserve original palette and AI mark */
+@keyframes v22OrbitOne{from{transform:rotate(-25deg)}to{transform:rotate(335deg)}}
+@keyframes v22OrbitTwo{from{transform:rotate(24deg)}to{transform:rotate(-336deg)}}
+@keyframes v22CoreFloat{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-9px) rotate(-3deg)}}
+@keyframes v22ChipFloat{0%,100%{translate:0 0}50%{translate:0 -7px}}
+.v2-orbit-one{animation:v22OrbitOne 32s linear infinite}
+.v2-orbit-two{animation:v22OrbitTwo 42s linear infinite}
+.v2-visual-core{animation:v22CoreFloat 7s ease-in-out infinite}
+.v2-floating{animation:v22ChipFloat 6s ease-in-out infinite}
+.v2-float-two{animation-delay:-2s}.v2-float-three{animation-delay:-4s}
+@media(prefers-reduced-motion:reduce){.v2-orbit,.v2-visual-core,.v2-floating{animation:none!important}}
