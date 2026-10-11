@@ -1,0 +1,35 @@
+/* Light theme accessibility pass, v2.4. Dark theme intentionally unchanged. */
+[data-theme="light"] {--bg:#f5f7fc;--card:#ffffff;--text:#0f172a;--muted:#475569;--line:#cbd5e1;--v2-stroke:#cbd5e1;--shadow:0 12px 28px rgba(22,40,78,.09);color-scheme:light}
+[data-theme="light"] body {color:var(--text)}
+[data-theme="light"] .home-search-shell {background:linear-gradient(135deg,#fff,#f1f4ff)!important;border-color:#cbd5e1;box-shadow:0 15px 35px rgba(48,68,120,.10)}
+[data-theme="light"] .home-search-box input,[data-theme="light"] #search,[data-theme="light"] .search-wrap,[data-theme="light"] .security-search-wrap {background:#fff!important;color:#0f172a!important;border-color:#aabbd1!important}
+[data-theme="light"] input::placeholder,[data-theme="light"] textarea::placeholder {color:#53657e!important;opacity:1}
+[data-theme="light"] input,[data-theme="light"] select,[data-theme="light"] textarea {color:#0f172a}
+[data-theme="light"] .home-search-icon,[data-theme="light"] .home-search-status {color:#475569}
+[data-theme="light"] #homeSearchClear {background:#edf2ff;color:#334155}
+[data-theme="light"] .home-quick-filters button,[data-theme="light"] #filters .filter:not(.active),[data-theme="light"] .filter:not(.active),[data-theme="light"] .secondary-action {background:#fff!important;color:#334155!important;border-color:#c4d0e0!important}
+[data-theme="light"] #filters .filter.active,[data-theme="light"] .filter.active {color:#fff!important}
+[data-theme="light"] .category-browse-card {background:linear-gradient(145deg,#ffffff,#f0f3ff)!important;color:#0f172a!important;border-color:#c3cee6!important;box-shadow:0 10px 25px rgba(25,48,85,.08)}
+[data-theme="light"] .category-browse-card strong {color:#0f172a!important}
+[data-theme="light"] .category-browse-card small {color:#475569!important}
+[data-theme="light"] .category-browse-arrow {color:#3159d6}
+[data-theme="light"] .tool-card,[data-theme="light"] .security-focus-card,[data-theme="light"] .security-card,[data-theme="light"] .spotlight-panel,[data-theme="light"] .mini-tool-card,[data-theme="light"] .related-tool-card,[data-theme="light"] .cert-card {background:linear-gradient(160deg,#fff,#f3f6ff)!important;color:#0f172a!important;border-color:#cbd5e1!important}
+[data-theme="light"] .tool-card h3,[data-theme="light"] .security-focus-card h3,[data-theme="light"] .security-card h3,[data-theme="light"] .spotlight-panel h2,[data-theme="light"] .mini-tool-card strong {color:#0f172a!important}
+[data-theme="light"] .tool-card p,[data-theme="light"] .tool-desc,[data-theme="light"] .security-focus-card p,[data-theme="light"] .security-card p,[data-theme="light"] .mini-tool-card small {color:#475569!important}
+[data-theme="light"] .tool-card .tag,[data-theme="light"] .platform-badge,[data-theme="light"] .status-badge.subtle {background:#edf2ff;color:#334b75;border-color:#c8d4eb}
+[data-theme="light"] .classification-native {color:#176b52!important;background:#e2f5ec!important}
+[data-theme="light"] .classification-general {color:#3153a8!important;background:#e8efff!important}
+[data-theme="light"] .status-badge.ai-classification {border-color:currentColor}
+[data-theme="light"] .card-bottom .details-btn,[data-theme="light"] .card-bottom .github-link,[data-theme="light"] .security-links a,[data-theme="light"] .mini-btn,[data-theme="light"] .quiet-action {background:#f1f5ff!important;color:#17356d!important;border-color:#b9c8e5!important}
+[data-theme="light"] .card-bottom .card-link,[data-theme="light"] .detail-btn.primary {background:linear-gradient(135deg,#3159d6,#7946d3)!important;color:#fff!important}
+[data-theme="light"] .text-button,[data-theme="light"] .breadcrumbs a,[data-theme="light"] .detail-grid a,[data-theme="light"] .footer-rich nav a:hover {color:#3159d6!important}
+[data-theme="light"] .home-search-results>* {color:#0f172a}
+[data-theme="light"] .v2-classification-card,[data-theme="light"] .v2-stats>div,[data-theme="light"] .detail-grid>div,[data-theme="light"] .profile-panel,[data-theme="light"] .submit-form,[data-theme="light"] .submission-flow>div,[data-theme="light"] .submission-classification-guide>div {background:#fff!important;color:#0f172a!important;border-color:#cbd5e1!important}
+[data-theme="light"] .v2-classification-card p,[data-theme="light"] .v2-classification-card small,[data-theme="light"] .profile-panel p {color:#475569}
+[data-theme="light"] .submit-form input,[data-theme="light"] .submit-form select,[data-theme="light"] .submit-form textarea {background:#fff!important;color:#0f172a!important;border-color:#9eafc7!important}
+[data-theme="light"] .duplicate-check,[data-theme="light"] .cert-note,[data-theme="light"] .security-relevance-panel {background:#f1f5ff!important;color:#334155!important;border-color:#cbd5e1}
+[data-theme="light"] .detail-btn.secondary {background:#fff!important;color:#19346e!important;border-color:#b7c8e2!important}
+[data-theme="light"] .directory-view-banner {background:linear-gradient(110deg,#eef3ff,#f8f1ff);border-color:#c5cee9}
+[data-theme="light"] .nav-links a,[data-theme="light"] .footer-rich nav a {color:#475569}
+[data-theme="light"] .nav-links a:hover {color:#17356d}
+[data-theme="light"] :focus-visible {outline-color:#3159d6}
