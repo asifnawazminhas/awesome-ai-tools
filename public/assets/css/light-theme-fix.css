@@ -48,3 +48,28 @@
 [data-theme="light"] .security-focus-badge {color:#4053b4!important}
 [data-theme="light"] .security-focus-actions a {color:#17356d!important;background:#f1f5ff!important;border-color:#b9c8e5!important}
 [data-theme="light"] .security-focus-actions a:hover {background:#e1eaff!important}
+
+
+/* v2.4.2 shared light mode controls */
+[data-theme="light"] .sort-wrap select,
+[data-theme="light"] #sort,
+[data-theme="light"] #resultCount,
+[data-theme="light"] .section-count,
+[data-theme="light"] .hero-counts,
+[data-theme="light"] .header-share {
+ background:#fff!important;color:#172b4d!important;border:1px solid #b7c8e2!important;
+ box-shadow:none!important;
+}
+[data-theme="light"] .sort-wrap select option {background:#fff;color:#172b4d}
+[data-theme="light"] #resultCount:hover,[data-theme="light"] .header-share:hover {background:#e8eeff!important;color:#17356d!important}
+[data-theme="light"] #resultCount,[data-theme="light"] .section-count {font-weight:800}
+[data-theme="light"] .share-menu {background:#fff!important;color:#172b4d!important;border-color:#b7c8e2!important}
+[data-theme="light"] .share-menu-head small,[data-theme="light"] .share-status {color:#475569!important}
+[data-theme="light"] .share-option,[data-theme="light"] .native-share-btn {color:#172b4d!important;background:#f3f6ff!important;border-color:#cad6eb!important}
+[data-theme="light"] .share-option:hover,[data-theme="light"] .native-share-btn:hover {background:#e4ecff!important}
+/* Explicitly readable fallback for user preference if theme stored on body */
+body[data-theme="light"] .sort-wrap select,body[data-theme="light"] #resultCount,body[data-theme="light"] .header-share {background:#fff!important;color:#172b4d!important}
+
+.global-share-container{margin-left:auto;position:relative;display:flex;align-items:center}
+.global-share-container .share-menu{z-index:1000}
+@media(max-width:700px){.global-share-container{margin-left:auto}}

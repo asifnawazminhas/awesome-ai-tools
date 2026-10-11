@@ -14,7 +14,7 @@
 <meta content="https://ai.asifnawazminhas.com/certifications/" property="og:url"/>
 <link href="/assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/assets/css/style.css?v=16.4" rel="stylesheet"/>
-<link href="/assets/css/v2-sitewide.css?v=2.1" rel="stylesheet"/><link rel="stylesheet" href="/assets/css/light-theme-fix.css?v=2.4"/></head>
+<link href="/assets/css/v2-sitewide.css?v=2.1" rel="stylesheet"/><link rel="stylesheet" href="/assets/css/light-theme-fix.css?v=2.4.2"/></head>
 <body>
 <header class="site-header">
 <div class="wrap nav">
@@ -29,7 +29,28 @@
 <a href="/about/">About</a>
 </nav>
 <button aria-label="Toggle theme" class="icon-btn" id="themeToggle" type="button">◐</button>
+<div class="global-share-container"><div class="share-menu-wrap">
+<button aria-controls="shareMenu" aria-expanded="false" aria-haspopup="true" class="header-share" id="shareSite" type="button">
+<span aria-hidden="true" class="share-icon">↗</span><span>Share</span>
+</button>
+<div class="share-menu" hidden="" id="shareMenu" role="menu">
+<div class="share-menu-head">
+<strong>Share Awesome AI Tools</strong>
+<small>Choose where to share</small>
 </div>
+<div class="share-grid">
+<a aria-label="Share on LinkedIn" class="share-option share-linkedin" data-share="linkedin" href="#" role="menuitem"><span>in</span><b>LinkedIn</b></a>
+<a aria-label="Share on X" class="share-option share-x" data-share="x" href="#" role="menuitem"><span>𝕏</span><b>X</b></a>
+<a aria-label="Share on WhatsApp" class="share-option share-whatsapp" data-share="whatsapp" href="#" role="menuitem"><span>◉</span><b>WhatsApp</b></a>
+<a aria-label="Share on Facebook" class="share-option share-facebook" data-share="facebook" href="#" role="menuitem"><span>f</span><b>Facebook</b></a>
+<a aria-label="Share by email" class="share-option share-email" data-share="email" href="#" role="menuitem"><span>✉</span><b>Email</b></a>
+<button aria-label="Copy site link" class="share-option share-copy" data-share="copy" role="menuitem" type="button"><span>⧉</span><b>Copy link</b></button>
+</div>
+<button class="native-share-btn" id="nativeShareBtn" type="button">More sharing options</button>
+<div aria-live="polite" class="share-status" id="shareStatus" role="status"></div>
+</div>
+</div>
+</div></div>
 </header>
 <main class="page-certifications">
 <section class="hero security-hero cert-hero">
@@ -148,5 +169,5 @@
   });
 })();
 </script>
-</body>
+<script src="/assets/js/site-controls.js?v=2.4.2" defer></script></body>
 </html>
