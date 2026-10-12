@@ -180,7 +180,7 @@ https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai
 
 All 42 tools have an `aiClassification` value in `public/data/tools.json`:
 
-- `Security-Native AI` (16): purpose-built for security testing, cyber defence or security research.
+- `Security-Native AI` (18): purpose-built for security testing, cyber defence or security research.
 - `General-Purpose AI` (24): general AI assistants and platforms applicable to security professionals.
 
 The homepage includes a classification filter independent from existing categories and quick filters. Classifications are shown on cards and detail pages. Orkas remains under AI Assistants and is General-Purpose AI.
