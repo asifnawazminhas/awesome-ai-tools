@@ -1756,5 +1756,51 @@
     ],
     "securitySummary": "Purpose-built capabilities for security testing of LLM applications and AI workflows.",
     "aiClassification": "Security-Native AI"
+  },
+  {
+    "name": "Decepticon",
+    "short": "D",
+    "category": "Security AI",
+    "url": "https://decepticon.red",
+    "desc": "Open-source autonomous red team agent supporting reconnaissance, exploitation, Active Directory and cloud operations, with isolated execution and reviewable findings.",
+    "tags": [
+      "Autonomous Pentesting",
+      "Red Teaming",
+      "Security Automation"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": false,
+    "featured": false,
+    "pricing": "Open Source / Hosted Option",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS",
+      "Docker",
+      "CLI",
+      "Web"
+    ],
+    "securitySubtype": "Autonomous Pentesting",
+    "lastVerified": "2026-10-12",
+    "logoText": "D",
+    "website": "https://decepticon.red",
+    "github": "https://github.com/BitterSecurity/Decepticon",
+    "apiAvailable": true,
+    "added": "2026-10-12",
+    "logo": "https://www.google.com/s2/favicons?domain=decepticon.red&sz=64",
+    "status": "Active",
+    "statusNote": "Self-hosted open-source agent; optional hosted service. Model and hosting costs may apply.",
+    "source": "https://github.com/BitterSecurity/Decepticon",
+    "lastUpdated": "2026-10-12",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Autonomous Pentesting",
+      "Red Teaming",
+      "Exploitation"
+    ],
+    "securitySummary": "Built specifically for autonomous red teaming and cybersecurity assessment workflows.",
+    "aiClassification": "Security-Native AI"
   }
 ]
