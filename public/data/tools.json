@@ -44,6 +44,48 @@
     "aiClassification": "Security-Native AI"
   },
   {
+    "name": "AgentDojo",
+    "short": "A",
+    "category": "Security AI",
+    "url": "https://github.com/ethz-spylab/agentdojo",
+    "desc": "Research benchmark for evaluating prompt injection attacks and defences against tool-using language-model agents.",
+    "tags": [
+      "Prompt Injection",
+      "Agent Security",
+      "Benchmarking"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "Python",
+      "CLI"
+    ],
+    "securitySubtype": "LLM Security",
+    "lastVerified": "2026-10-16",
+    "logoText": "A",
+    "website": "https://github.com/ethz-spylab/agentdojo",
+    "github": "https://github.com/ethz-spylab/agentdojo",
+    "apiAvailable": true,
+    "added": "2026-10-16",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/ethz-spylab/agentdojo",
+    "lastUpdated": "2026-10-16",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Prompt Injection",
+      "Agent Security",
+      "Benchmarking"
+    ],
+    "securitySummary": "Reproducible prompt injection attack and defence benchmarking",
+    "aiClassification": "Security-Native AI"
+  },
+  {
     "name": "Aider",
     "short": "AI",
     "category": "Coding Assistants",
@@ -352,6 +394,52 @@
     "aiClassification": "Security-Native AI"
   },
   {
+    "name": "Decepticon",
+    "short": "D",
+    "category": "Security AI",
+    "url": "https://decepticon.red",
+    "desc": "Open-source autonomous red team agent supporting reconnaissance, exploitation, Active Directory and cloud operations, with isolated execution and reviewable findings.",
+    "tags": [
+      "Autonomous Pentesting",
+      "Red Teaming",
+      "Security Automation"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": false,
+    "featured": false,
+    "pricing": "Open Source / Hosted Option",
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS",
+      "Docker",
+      "CLI",
+      "Web"
+    ],
+    "securitySubtype": "Autonomous Pentesting",
+    "lastVerified": "2026-10-12",
+    "logoText": "D",
+    "website": "https://decepticon.red",
+    "github": "https://github.com/BitterSecurity/Decepticon",
+    "apiAvailable": true,
+    "added": "2026-10-12",
+    "logo": "https://www.google.com/s2/favicons?domain=decepticon.red&sz=64",
+    "status": "Active",
+    "statusNote": "Self-hosted open-source agent; optional hosted service. Model and hosting costs may apply.",
+    "source": "https://github.com/BitterSecurity/Decepticon",
+    "lastUpdated": "2026-10-12",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Autonomous Pentesting",
+      "Red Teaming",
+      "Exploitation"
+    ],
+    "securitySummary": "Built specifically for autonomous red teaming and cybersecurity assessment workflows.",
+    "aiClassification": "Security-Native AI"
+  },
+  {
     "name": "DeepSeek",
     "short": "DS",
     "category": "AI Assistants",
@@ -391,6 +479,48 @@
     ],
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
     "aiClassification": "General-Purpose AI"
+  },
+  {
+    "name": "DeepTeam",
+    "short": "D",
+    "category": "Security AI",
+    "url": "https://github.com/confident-ai/deepteam",
+    "desc": "Open-source Python framework for red teaming LLMs and AI agents, with prompt injection, jailbreak and multi-turn attack simulations.",
+    "tags": [
+      "LLM Red Teaming",
+      "Prompt Injection",
+      "Agent Security"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "Python",
+      "CLI"
+    ],
+    "securitySubtype": "LLM Security",
+    "lastVerified": "2026-10-16",
+    "logoText": "D",
+    "website": "https://github.com/confident-ai/deepteam",
+    "github": "https://github.com/confident-ai/deepteam",
+    "apiAvailable": true,
+    "added": "2026-10-16",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/confident-ai/deepteam",
+    "lastUpdated": "2026-10-16",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "LLM Red Teaming",
+      "Prompt Injection",
+      "Agent Security"
+    ],
+    "securitySummary": "LLM security assessments, attack simulation and risk evaluation",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Devin",
@@ -685,6 +815,49 @@
     "aiClassification": "General-Purpose AI"
   },
   {
+    "name": "Invariant Guardrails",
+    "short": "IG",
+    "category": "Security AI",
+    "url": "https://invariantlabs.ai/",
+    "desc": "Open-source contextual security guardrails for AI agents, LLM workflows and MCP tool interactions.",
+    "tags": [
+      "Agent Security",
+      "MCP Security",
+      "Guardrails"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "Python",
+      "API",
+      "MCP"
+    ],
+    "securitySubtype": "AI Agent Security",
+    "lastVerified": "2026-10-16",
+    "logoText": "IG",
+    "website": "https://invariantlabs.ai/",
+    "github": "https://github.com/invariantlabs-ai/invariant",
+    "apiAvailable": true,
+    "added": "2026-10-16",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/invariantlabs-ai/invariant",
+    "lastUpdated": "2026-10-16",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Agent Security",
+      "MCP Security",
+      "Guardrails"
+    ],
+    "securitySummary": "Policy-based guardrails for agent and MCP workflows",
+    "aiClassification": "Security-Native AI"
+  },
+  {
     "name": "Jan",
     "short": "JN",
     "category": "Local AI",
@@ -852,6 +1025,49 @@
     ],
     "securitySummary": "General-purpose AI that can support legitimate security research and authorised security workflows.",
     "aiClassification": "General-Purpose AI"
+  },
+  {
+    "name": "Microsoft RAMPART",
+    "short": "MR",
+    "category": "Security AI",
+    "url": "https://microsoft.github.io/RAMPART/",
+    "desc": "Pytest-native framework for reproducible safety and security testing of agentic AI applications.",
+    "tags": [
+      "Agent Security",
+      "Security Testing",
+      "Regression Testing"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "Python",
+      "CLI",
+      "CI/CD"
+    ],
+    "securitySubtype": "AI Agent Security",
+    "lastVerified": "2026-10-16",
+    "logoText": "MR",
+    "website": "https://microsoft.github.io/RAMPART/",
+    "github": "https://github.com/microsoft/RAMPART",
+    "apiAvailable": true,
+    "added": "2026-10-16",
+    "logo": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "status": "Active",
+    "statusNote": "",
+    "source": "https://github.com/microsoft/RAMPART",
+    "lastUpdated": "2026-10-16",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "Agent Security",
+      "Security Testing",
+      "Regression Testing"
+    ],
+    "securitySummary": "Automated adversarial testing and regression checks for AI agents",
+    "aiClassification": "Security-Native AI"
   },
   {
     "name": "Mistral AI",
@@ -1408,6 +1624,50 @@
     "aiClassification": "General-Purpose AI"
   },
   {
+    "name": "Promptfoo",
+    "short": "PF",
+    "category": "Security AI",
+    "url": "https://www.promptfoo.dev/",
+    "desc": "Open-source framework and CLI for evaluating and red teaming LLM applications, testing prompt injection and other AI security risks, and automating evaluations in CI/CD.",
+    "tags": [
+      "LLM Security",
+      "AI Red Teaming",
+      "LLM Evaluations"
+    ],
+    "type": "Security",
+    "openSource": true,
+    "localModel": true,
+    "featured": false,
+    "pricing": "Open Source",
+    "platforms": [
+      "CLI",
+      "Node.js",
+      "Local",
+      "CI/CD"
+    ],
+    "securitySubtype": "LLM Red Teaming",
+    "lastVerified": "2026-10-10",
+    "logoText": "PF",
+    "website": "https://www.promptfoo.dev/",
+    "github": "https://github.com/promptfoo/promptfoo",
+    "apiAvailable": true,
+    "added": "2026-10-10",
+    "logo": "https://www.google.com/s2/favicons?domain=promptfoo.dev&sz=64",
+    "status": "Active",
+    "statusNote": "Some model providers or hosted services may have separate costs.",
+    "source": "https://github.com/promptfoo/promptfoo",
+    "lastUpdated": "2026-10-10",
+    "localLogo": "/assets/img/favicon.svg",
+    "securityRelevance": "Security Native",
+    "securityCapabilities": [
+      "LLM Red Teaming",
+      "Prompt Injection Testing",
+      "LLM Security Evaluation"
+    ],
+    "securitySummary": "Purpose-built capabilities for security testing of LLM applications and AI workflows.",
+    "aiClassification": "Security-Native AI"
+  },
+  {
     "name": "PyRIT",
     "short": "PY",
     "category": "Security AI",
@@ -1711,96 +1971,6 @@
       "Vulnerability Validation"
     ],
     "securitySummary": "Built specifically for cybersecurity or AI security workflows.",
-    "aiClassification": "Security-Native AI"
-  },
-  {
-    "name": "Promptfoo",
-    "short": "PF",
-    "category": "Security AI",
-    "url": "https://www.promptfoo.dev/",
-    "desc": "Open-source framework and CLI for evaluating and red teaming LLM applications, testing prompt injection and other AI security risks, and automating evaluations in CI/CD.",
-    "tags": [
-      "LLM Security",
-      "AI Red Teaming",
-      "LLM Evaluations"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": true,
-    "featured": false,
-    "pricing": "Open Source",
-    "platforms": [
-      "CLI",
-      "Node.js",
-      "Local",
-      "CI/CD"
-    ],
-    "securitySubtype": "LLM Red Teaming",
-    "lastVerified": "2026-10-10",
-    "logoText": "PF",
-    "website": "https://www.promptfoo.dev/",
-    "github": "https://github.com/promptfoo/promptfoo",
-    "apiAvailable": true,
-    "added": "2026-10-10",
-    "logo": "https://www.google.com/s2/favicons?domain=promptfoo.dev&sz=64",
-    "status": "Active",
-    "statusNote": "Some model providers or hosted services may have separate costs.",
-    "source": "https://github.com/promptfoo/promptfoo",
-    "lastUpdated": "2026-10-10",
-    "localLogo": "/assets/img/favicon.svg",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "LLM Red Teaming",
-      "Prompt Injection Testing",
-      "LLM Security Evaluation"
-    ],
-    "securitySummary": "Purpose-built capabilities for security testing of LLM applications and AI workflows.",
-    "aiClassification": "Security-Native AI"
-  },
-  {
-    "name": "Decepticon",
-    "short": "D",
-    "category": "Security AI",
-    "url": "https://decepticon.red",
-    "desc": "Open-source autonomous red team agent supporting reconnaissance, exploitation, Active Directory and cloud operations, with isolated execution and reviewable findings.",
-    "tags": [
-      "Autonomous Pentesting",
-      "Red Teaming",
-      "Security Automation"
-    ],
-    "type": "Security",
-    "openSource": true,
-    "localModel": false,
-    "featured": false,
-    "pricing": "Open Source / Hosted Option",
-    "platforms": [
-      "Linux",
-      "Windows",
-      "macOS",
-      "Docker",
-      "CLI",
-      "Web"
-    ],
-    "securitySubtype": "Autonomous Pentesting",
-    "lastVerified": "2026-10-12",
-    "logoText": "D",
-    "website": "https://decepticon.red",
-    "github": "https://github.com/BitterSecurity/Decepticon",
-    "apiAvailable": true,
-    "added": "2026-10-12",
-    "logo": "https://www.google.com/s2/favicons?domain=decepticon.red&sz=64",
-    "status": "Active",
-    "statusNote": "Self-hosted open-source agent; optional hosted service. Model and hosting costs may apply.",
-    "source": "https://github.com/BitterSecurity/Decepticon",
-    "lastUpdated": "2026-10-12",
-    "localLogo": "/assets/img/favicon.svg",
-    "securityRelevance": "Security Native",
-    "securityCapabilities": [
-      "Autonomous Pentesting",
-      "Red Teaming",
-      "Exploitation"
-    ],
-    "securitySummary": "Built specifically for autonomous red teaming and cybersecurity assessment workflows.",
     "aiClassification": "Security-Native AI"
   }
 ]

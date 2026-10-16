@@ -178,9 +178,15 @@ https://academy.hackthebox.com/preview/certifications/htb-certified-offensive-ai
 
 ## AI classifications
 
-All 42 tools have an `aiClassification` value in `public/data/tools.json`:
+All 46 tools have an `aiClassification` value in `public/data/tools.json`:
 
-- `Security-Native AI` (18): purpose-built for security testing, cyber defence or security research.
+- `Security-Native AI` (22): purpose-built for security testing, cyber defence or security research.
 - `General-Purpose AI` (24): general AI assistants and platforms applicable to security professionals.
 
 The homepage includes a classification filter independent from existing categories and quick filters. Classifications are shown on cards and detail pages. Orkas remains under AI Assistants and is General-Purpose AI.
+
+## 2026-10-16
+
+- Added [DeepTeam](https://github.com/confident-ai/deepteam), [AgentDojo](https://github.com/ethz-spylab/agentdojo), [Invariant Guardrails](https://github.com/invariantlabs-ai/invariant) and [Microsoft RAMPART](https://github.com/microsoft/RAMPART).
+- Updated dedicated tool profiles, sitemap, directory statistics, structured metadata and changelog.
+- Directory total: **46 tools**, comprising **22 Security-Native AI** and **24 General-Purpose AI**.
